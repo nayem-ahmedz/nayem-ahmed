@@ -22,8 +22,8 @@ You can visit my Portffolio live here: [Nayem Ahmed's Portfolio](#);
 
 ## Contact Me
 If you would like to get in touch, feel free to connect via:
-+ Email : 
-+ [Linkedin](www.linkedin.com/in/nayem-ahmedz) : www.linkedin.com/in/nayem-ahmedz
-+ [Github](https://github.com/nayem-ahmedz/) : https://github.com/nayem-ahmedz/
++ Email : willbe-added@soon.com 
++ Linkedin : www.linkedin.com/in/nayem-ahmedz
++ Github : https://github.com/nayem-ahmedz/
 
 ### Thank You!
