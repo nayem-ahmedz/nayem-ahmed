@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body{
-    margin: 0; min-height: 100vh; display: flex; flex-direction: column; background-image: linear-gradient(45deg, #ccc, #eee); font-family: Arial, Helvetica, sans-serif;
+    margin: 0; min-height: 100vh; display: flex; flex-direction: column; background-image: linear-gradient(45deg, rgba(0,0,0,0.75), rgba(0,0,0,0.95)); font-family: Arial, Helvetica, sans-serif;
 }
 header, footer{
     flex-shrink: 0;
@@ -11,15 +11,18 @@ main{
     flex-grow: 1;
 }
 .wrapper{
-    max-width: 1200px; margin: auto; border: 1px solid; padding-left: 10px !important; padding-right: 10px !important;
+    max-width: 1200px; margin: auto; padding-left: 10px !important; padding-right: 10px !important;
 }
 
 /* Header */
+header{
+    position: fixed; width: 100%; background-image: linear-gradient(90deg, rgba(50,50,50), rgb(10,10,10));
+}
 .header-cont{
     display: flex; justify-content: space-between; align-items: center;
 }
 .header-cont > h1{
-    color: blue;
+    color: rgba(0,0,0,0.5); text-shadow: 0 0 1px #aaa;
 }
 nav > ul{
     list-style-type: none;
@@ -28,18 +31,40 @@ nav > ul li{
     display: inline-block;
 }
 nav > ul li a:link, nav > ul li a:visited{
-    display: inline-block; padding: 10px; text-decoration: none; border-radius: 10px; transition: all 0.3s ease-in;
+    display: inline-block; padding: 10px; text-decoration: none; border-radius: 10px; transition: all 0.3s ease-in; color: #bce; font-size: 1.1rem;
 }
 nav > ul li a:hover{
-    background-color: blue; color: white;
+    background-color: black; box-shadow: 0 0 3px #eee;
 }
 
 /* Main : Section */
+main{
+    margin-top: 80px;
+}
 .main-cont{
-    text-align: center; padding: 40px 0;
+    text-align: center; padding: 70px 0; display: flex; justify-content: space-evenly; align-items: center; flex-wrap: wrap; gap: 10px;
 }
 .user-image{
     max-width: 350px; height: auto; border-radius: 50%;
+}
+.main-cont-right{
+    color: white;
+}
+.mcr-hey{
+    font-size: 1.4rem; margin: 10px auto; color: #aaa;
+}
+.mcr-name{
+    font-size: 2.5rem; margin: 18px auto;
+}
+.mcr-rule{
+    margin: 10px auto; color: #aaa;
+}
+.mcr-btn{
+    border: 1px solid black; padding: 8px 20px; font-size: 1rem; border-radius: 10px;
+    opacity: 0.5; margin-top: 20px; transition: all 0.3s ease; cursor: pointer;
+}
+.mcr-btn:hover{
+    opacity: 1.0;
 }
 
 
