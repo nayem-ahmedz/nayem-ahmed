@@ -3,7 +3,7 @@
 ## Overview
 Hi, I am **Nayem Ahmed**, a third-year student of B.Sc in Computer Science and Engineering at Metropolitan University, Sylhet. I am a passionate **Front-End Web Developer** with a keen interest in creating interactive and visually appealing websites. This portfolio showcases some of my best work and demonstrates my skills in web development.
 
-You can visit my Portffolio live here: [Nayem Ahmed's Portfolio](#);
+You can visit my Portffolio live here: [Nayem Ahmed's Portfolio](https://nayem-ahmedz.netlify.app/);
 
 ## Technology used
 - HTML
@@ -18,7 +18,7 @@ You can visit my Portffolio live here: [Nayem Ahmed's Portfolio](#);
 
 ## Creation
 *Created on : 6 September 2024*
-*Last updated on : 6 September 2024*
+*Last updated on : 13 September 2024*
 
 ## Contact Me
 If you would like to get in touch, feel free to connect via:
