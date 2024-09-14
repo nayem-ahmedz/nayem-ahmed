@@ -22,7 +22,7 @@ header{
     display: flex; justify-content: space-between; align-items: center; padding-right: 18px; padding-left: 18px;
 }
 .header-cont > h1{
-    color: rgba(0,0,0,0.5); text-shadow: 0 0 1px #aaa;
+    color: rgba(0,0,0,0.5); text-shadow: 0 0 1px #bbb;
 }
 
 /* Top Navigation */
@@ -58,7 +58,7 @@ nav > ul li a:hover{
     transform: rotate(45deg) translate(-7px, -7px);
 }
 .tnc-change{
-    opacity: 1.0 !important;
+    opacity: 1.0 !important; visibility: visible !important; pointer-events: auto !important;
 }
 
 /* Main : Section */
@@ -100,7 +100,7 @@ footer p{
 /* Media Screen */
 @media screen and (max-width: 767px){
     .top-nav{
-        position: absolute; top: 25px; right: -13px; z-index: 1; background-color: rgba(0,0,0,0.7); width: 250px; height: 350px; text-align: right; padding: 20px 5px; opacity: 0;
+        position: absolute; top: 25px; right: 0; z-index: 1; background-color: rgba(0,0,0,0.7); width: 250px; height: 350px; text-align: right; padding: 20px 5px; opacity: 0; visibility: hidden; pointer-events: none;
     }
     .top-nav li{
         display: block;
