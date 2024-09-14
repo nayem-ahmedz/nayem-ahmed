@@ -66,7 +66,7 @@ main{
     margin-top: 80px;
 }
 .main-cont{
-    text-align: center; padding: 70px 0; display: flex; justify-content: space-evenly; align-items: center; flex-wrap: wrap; gap: 10px;
+    text-align: center; padding: 70px 10px; display: flex; justify-content: space-evenly; align-items: center; flex-wrap: wrap; gap: 10px;
 }
 .user-image{
     max-width: 350px; height: auto; border-radius: 50%;
@@ -81,7 +81,10 @@ main{
     font-size: 2.5rem; margin: 18px auto;
 }
 .mcr-rule{
-    margin: 10px auto; color: #aaa;
+    margin: 10px auto; color: #aaa; min-width: 310px;
+}
+.mcr-rule::after{
+    content: '_'; color: blue;
 }
 .mcr-btn{
     border: 1px solid black; padding: 8px 20px; font-size: 1rem; border-radius: 10px;
@@ -89,6 +92,26 @@ main{
 }
 .mcr-btn:hover{
     opacity: 1.0;
+}
+.mcr-btn-dance{
+    animation-name: danceBtn; animation-duration: 2s; animation-timing-function: ease;
+}
+@keyframes danceBtn {
+    0%{
+        transform: rotate(0); opacity: 0.5;
+    }
+    25%{
+        transform: rotate(10deg); opacity: 0.8;
+    }
+    50%{
+        transform: rotate(0); opacity: 0.2;
+    }
+    75%{
+        transform: rotate(-10deg); opacity: 0.8;
+    }
+    100%{
+        transform: rotate(0); opacity: 0.5;
+    }
 }
 
 
@@ -107,5 +130,16 @@ footer p{
     }
     .hamburger{
         display: block;
+    }
+    .user-image{
+        max-width: 300px;
+    }
+}
+@media screen and (max-width: 424px){
+    .mcr-rule{
+        min-width: auto;
+    }
+    .user-image{
+        width: 80%;
     }
 }
