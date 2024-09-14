@@ -9,13 +9,19 @@
     <meta name="keywords" content="nayem, nayem ahmed, portfolio, nayems canvas, nayemscanvas, nayems space, web designer, web developer, nayems world, nayems website">
     <link rel="icon" href="/assets/favicon.ico">
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/assets/pages-style.css">
 </head>
 <body>
     <header>
         <div class="header-cont wrapper">
-            <h1>Portfolio</h1>
+            <h1>Nayem's Space</h1>
             <nav>
-                <ul>
+                <div class="hamburger" onclick="toggleNav()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <ul class="top-nav">
                     <li> <a href="/index.html">Home</a> </li>
                     <li> <a href="/pages/about.html">About</a> </li>
                     <li> <a href="/pages/contact.html">Contact</a> </li>
@@ -26,12 +32,27 @@
     </header>
     <main>
         <section>
-            <div class="wrapper">
-                <h1>About</h1>
+            <div class="wrapper about-main">
+                <div class="about-top">
+                    <img src="/assets/nayem-ahmed.png" alt="nayem ahmed's picture" class="user-image">
+                    <h1 class="mcr-name">Nayem Ahmed</h1>
+                    <ul>
+                        <li>Front-end Web Developer</li>
+                        <li>Content Creator</li>
+                        <li>Programmer</li>
+                    </ul>
+                </div>
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>
+                        Hey! I am Nayem Ahmed. A third-year student of B.Sc in Computer Science and Engineering at Metropolitan University, Sylhet. I am passionate about Web Develpment. I started learning web development from July 2023. Since them I explored HTML, CSS, Js, Bootstrap, React Js and a lot more. In my university, I have created a Project named Student-Parent Portal using php and mySql. Thus I have some knowledge about backend as well. But I am planning to use Javascript for both front-end and backend. My goal is to be a Full-stack Web Developer. Am I following path of MERN stack?
+                    </p>
+                    <p>
+                        During first-year in my university, learnt 'C' as my first Programming language. C is amazing. Day by day, I have got chance to explore C++, Java and many other programming language. I could not forget about Java. Using java (Spring boot) as backend programming language? No, my answer is negative. 
+                    </p>
+                </div>
             </div>
         </section>
     </main>
-    
-    <script src="/script.js"></script>
 </body>
 </html>
