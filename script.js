@@ -1,5 +1,4 @@
 //script
-
 //navigation : mobile icon
 function toggleNav(){
     let icon = document.querySelector('.hamburger');
