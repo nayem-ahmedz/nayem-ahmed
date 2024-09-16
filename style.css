@@ -11,7 +11,7 @@ main{
     flex-grow: 1;
 }
 .wrapper{
-    max-width: 1200px; margin: auto; padding-left: 10px; padding-right: 10px;
+    max-width: 1300px; margin: auto; padding-left: 10px; padding-right: 10px;
 }
 
 /* Header */
@@ -36,10 +36,13 @@ nav > ul li{
     display: inline-block;
 }
 nav > ul li a:link, nav > ul li a:visited{
-    display: inline-block; padding: 10px; text-decoration: none; border-radius: 10px; transition: all 0.3s ease-in; color: #bce; font-size: 1.1rem;
+    display: inline-block; padding: 10px; text-decoration: none; border-radius: 10px; transition: all 0.3s ease-in; color: #bce; font-size: 1.1rem; font-weight: 600;
 }
 nav > ul li a:hover{
     background-color: black; box-shadow: 0 0 3px #eee;
+}
+.top-nav-active{
+    box-shadow: 0 0 3px rgba(255,255,255, 0.35);
 }
 /* Hamburger Nav icon*/
 .hamburger{
@@ -58,7 +61,7 @@ nav > ul li a:hover{
     transform: rotate(45deg) translate(-7px, -7px);
 }
 .tnc-change{
-    opacity: 1.0 !important;
+    opacity: 1.0 !important; pointer-events: auto !important;
 }
 
 /* Main : Section */
@@ -84,7 +87,7 @@ main{
     margin: 10px auto; color: #aaa; min-width: 310px;
 }
 .mcr-rule::after{
-    content: '_'; color: blue;
+    content: '_'; color: white;
 }
 .mcr-btn{
     border: 1px solid black; padding: 8px 20px; font-size: 1rem; border-radius: 10px;
@@ -123,7 +126,7 @@ footer p{
 /* Media Screen */
 @media screen and (max-width: 767px){
     .top-nav{
-        position: absolute; top: 25px; right: -13px; z-index: 1; background-color: rgba(0,0,0,0.7); width: 250px; height: 350px; text-align: right; padding: 20px 5px; opacity: 0;
+        position: absolute; top: 25px; right: -13px; z-index: 1; background-color: rgba(0,0,0,0.7); width: 250px; height: 350px; text-align: right; padding: 20px 5px; opacity: 0; pointer-events: none;
     }
     .top-nav li{
         display: block;

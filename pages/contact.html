@@ -9,6 +9,7 @@
     <meta name="keywords" content="nayem, nayem ahmed, portfolio, nayems canvas, nayemscanvas, nayems space, web designer, web developer, nayems world, nayems website">
     <link rel="icon" href="/assets/favicon.ico">
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/assets/pages-style.css">
 </head>
 <body>
     <header>
@@ -23,16 +24,22 @@
                 <ul class="top-nav">
                     <li> <a href="/index.html">Home</a> </li>
                     <li> <a href="/pages/about.html">About</a> </li>
-                    <li> <a href="/pages/contact.html">Contact</a> </li>
+                    <li> <a href="/pages/contact.html" class="top-nav-active">Contact</a> </li>
                     <li> <a href="/pages/projects.html">Projects</a> </li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section>
-            <div class="wrapper">
-                <h1>Contact</h1>
+        <section class="contact-section">
+            <div class="contact-form-field">
+                <h1>Contact Me!</h1>
+                <form class="contact-form" autocomplete="off">
+                    <input type="text" id="name" name="name" placeholder="Your Name">
+                    <input type="email" id="email" name="email" placeholder="Your Email">
+                    <textarea id="message" name="message" placeholder="How can I help you?"></textarea>
+                    <input type="submit" value="Send" disabled>
+                </form>
             </div>
         </section>
     </main>
