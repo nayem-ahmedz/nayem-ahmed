@@ -6,3 +6,7 @@ function toggleNav(){
     let topnav = document.querySelector('.top-nav');
     topnav.classList.toggle('tnc-change');
 }
+
+//update footer last-update-date
+const lastUpdate = document.getElementById('footer-date-update');
+lastUpdate.textContent = 'September 2024';
