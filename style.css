@@ -119,8 +119,41 @@ main{
 
 
 /* footer */
-footer p{
-    text-align: center; color: #aaa;
+footer{
+    padding-top: 15px; padding-bottom: 20px; color: #aaa; background-color: rgba(0,0,0,0.5);
+}
+.footer-cont{
+    display: flex; justify-content: center; align-items: center; flex-wrap: wrap;
+}
+.footer-cont > div{
+    width: 50%;
+}
+.footer-links{
+    text-align: center;
+}
+.footer-links p{
+    margin: 5px auto 8px;
+}
+.footer-links a{
+    text-decoration: none; border-radius: 50%;
+}
+.footer-links i{
+    color: whitesmoke; font-size: 1.5rem; margin: 5px; transition: all 0.3s;
+}
+.footer-links i:hover{
+    transform: scale(1.5);
+}
+.footer-right{
+    text-align: center;
+}
+.footer-right a{
+    color: #abc; text-decoration: none;
+}
+.footer-right a:hover{
+    color: white;
+}
+.footer-right p{
+    margin: 5px auto;
 }
 
 /* Media Screen */
@@ -136,6 +169,11 @@ footer p{
     }
     .user-image{
         max-width: 300px;
+    }
+}
+@media screen and (max-width: 580px){
+    .footer-cont > div{
+        width: 100%;
     }
 }
 @media screen and (max-width: 424px){
