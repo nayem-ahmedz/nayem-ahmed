@@ -43,10 +43,16 @@
     resize: none; height: 80px;
 }
 .contact-form > input[type="submit"]{
-    width: auto; padding: 8px 20px; border-radius: 15px; cursor: not-allowed;
+    width: auto; padding: 8px 20px; border-radius: 15px; cursor: pointer;
+}
+.contact-form > input[type="submit"]:hover{
+    background-color: black; color: white;
 }
 .contact-form > input:focus, .contact-form > textarea:focus{
     outline: 1px solid black;
+}
+#error-message{
+    visibility: hidden;
 }
 
 @media screen and (max-width: 560px){
