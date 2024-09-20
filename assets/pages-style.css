@@ -54,6 +54,9 @@
 #error-message{
     visibility: hidden; color: yellow;
 }
+.captch-div{
+    display: block; width: 80%; margin: auto;
+}
 
 /* Message Section */
 .message-section{
