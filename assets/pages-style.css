@@ -91,7 +91,7 @@
     .contact-form-field{
         padding: 40px 20px;
     }
-    .contact-form > input, .contact-form > textarea{
+    .contact-form > input, .contact-form > textarea, .captcha-div{
         width: 95%;
     }
     #success-message{
