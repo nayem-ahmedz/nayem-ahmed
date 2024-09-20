@@ -98,3 +98,8 @@
         width: 90%;
     }
 }
+@media screen and (max-width: 400px){
+    .captcha-div{
+        transform: scale(0.8); margin: 0;
+    }
+}
