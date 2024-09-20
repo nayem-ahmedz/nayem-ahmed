@@ -28,7 +28,7 @@
 
 /* Page : contact */
 .contact-section{
-    padding: 120px 20px;
+    padding: 80px 20px;
 }
 .contact-form-field{
     background-color: rgba(255,255,255, 0.1); max-width: 500px; margin: auto; padding: 50px 40px; text-align: center; border-radius: 20px; box-shadow: 0 0 5px rgba(0,0,0, 0.5);
@@ -52,7 +52,36 @@
     outline: 1px solid black;
 }
 #error-message{
-    visibility: hidden;
+    visibility: hidden; color: yellow;
+}
+
+/* Message Section */
+.message-section{
+    min-height: 600px; display: flex; justify-content: center; align-items: center; text-align: center;
+}
+#success-message{
+    width: 400px; padding: 20px 20px 55px; background-color: white; text-align: center; border-radius: 10px; box-shadow: 0 0 5px black;
+}
+#sm-cross-btn{
+    display: block; margin-left: auto; padding: 5px 8px 4px; font-size: 1rem; color: red;
+}
+#sm-cross-btn:hover{
+    background-color: red; color: white; border-color: red;
+}
+#success-message > h2{
+    font-weight: 400; opacity: 0.9;
+}
+#success-message > h3{
+    color: blue;
+}
+.back-home-link{
+    text-decoration: none;
+}
+.back-home-link:hover{
+    text-decoration: 1px solid underline;
+}
+.back-home-link > i{
+    margin-right: 10px;
 }
 
 @media screen and (max-width: 560px){
@@ -61,5 +90,8 @@
     }
     .contact-form > input, .contact-form > textarea{
         width: 95%;
+    }
+    #success-message{
+        width: 90%;
     }
 }

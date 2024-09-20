@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nayem Ahmed | Contact</title>
+    <title>Message | Nayem Ahmed</title>
     <meta name="author" content="Nayem Ahmed">
     <meta name="description" content="This is a portfolio website of Nayem Ahmed, a Front-end Web Developer.">
     <meta name="keywords" content="nayem, nayem ahmed, portfolio, nayems canvas, nayemscanvas, nayems space, web designer, web developer, nayems world, nayems website">
@@ -32,17 +32,12 @@
         </div>
     </header>
     <main>
-        <section class="contact-section">
-            <div class="contact-form-field">
-                <h1>Contact Me!</h1>
-                <form action="/pages/message.html" name="Contact-Form" method="POST" data-netlify-recaptcha="true" data-netlify="true" class="contact-form">
-                    <input type="text" id="name" name="name" placeholder="Your Name">
-                    <input type="email" id="email" name="email" placeholder="Your Email">
-                    <textarea id="message" name="message" placeholder="How can I help you?"></textarea>
-                    <div data-netlify-recaptcha="true"></div>
-                    <p id="error-message">Error.message</p>
-                    <input type="submit" value="Send" id="send-btn">
-                </form>
+        <section class="wrapper message-section">
+            <div id="success-message">
+                <button id="sm-cross-btn" onclick="document.location='contact.html';">X</button>
+                <h2>Thank You!</h2>
+                <h3>Your message has been sent</h3>
+                <a href="/index.html" class="back-home-link"> <i class="fa-solid fa-arrow-left"></i>Back to Home</a>
             </div>
         </section>
     </main>
