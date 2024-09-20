@@ -16,7 +16,7 @@ main{
 
 /* Header */
 header{
-    position: fixed; width: 100%; background-image: linear-gradient(90deg, rgba(50,50,50), rgb(10,10,10));
+    position: fixed; width: 100%; background-image: linear-gradient(90deg, rgba(50,50,50), rgb(10,10,10)); z-index: 3;
 }
 .header-cont{
     display: flex; justify-content: space-between; align-items: center; padding-right: 18px; padding-left: 18px;
@@ -138,7 +138,7 @@ footer{
     text-decoration: none; border-radius: 50%;
 }
 .footer-links i{
-    color: whitesmoke; font-size: 1.5rem; margin: 5px; transition: all 0.3s;
+    color: whitesmoke; font-size: 1.6rem; margin: 5px; transition: all 0.3s;
 }
 .footer-links i:hover{
     transform: scale(1.5);
