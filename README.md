@@ -18,7 +18,7 @@ You can visit my Portffolio live here: [Nayem Ahmed's Portfolio](https://nayem-a
 
 ## Creation
 *Created on : 6 September 2024*
-*Last updated on : 13 September 2024*
+*Last updated on : 21 September 2024*
 
 ## Contact Me
 If you would like to get in touch, feel free to connect via:

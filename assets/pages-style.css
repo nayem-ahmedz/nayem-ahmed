@@ -87,6 +87,36 @@
     margin-right: 10px;
 }
 
+/* Page : Projects */
+.project-outer{
+    display: flex; flex-wrap: wrap; gap: 1rem;
+}
+.project-inner{
+    width: 23.5%; position: relative; overflow: hidden; border-radius: 5px;
+}
+.project-inner img{
+    width: 100%;
+}
+.project-inner > h3{
+    position: absolute; bottom: -80px; background-color: #eee; width: 100%; padding: 12px 0; margin: 0; text-align: center; transition: all 0.5s; box-shadow: 0 0 5px black;
+}
+.project-inner:hover .project-name{
+    bottom: 0;
+}
+
+@media screen and (max-width: 1300px){
+    .project-inner{
+        width: 31.5%;
+    }
+}
+@media screen and (max-width: 767px){
+    .project-inner{
+        width: 47.5%;
+    }
+    .project-outer{
+        gap: 0.8rem;
+    }
+}
 @media screen and (max-width: 560px){
     .contact-form-field{
         padding: 40px 20px;
