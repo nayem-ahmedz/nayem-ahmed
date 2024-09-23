@@ -31,12 +31,20 @@
             </nav>
         </div>
     </header>
-    <main>
+    <main class="projects-page">
         <section>
             <div class="wrapper">
-                <h1>Projects</h1>
+                <h1 class="project-heading text-center">List of all Projects</h1>
+                <p class="text-light text-readable">
+                    Since I started learning web development, I tried to build projects, with as much knowledge as I gained. Thanks to some of my guide who taught me to create project while learning, one says 'Don't just keep learning and sit doing nothing, keep learning and try to build simple projects with whatever you have learnt yet'. I followed them and I have created lots of projects. Here is a few of them
+                </p>
                 <article class="css-projects">
-                    <h2>1. CSS</h2>
+                    <h2 class="project-types-heading">1. CSS</h2>
+                    <select id="sort-projects-1" class="sort-option">
+                        <option value="sort">Sort</option>
+                        <option value="newer">Newer</option>
+                        <option value="older">Older</option>
+                    </select>
                     <div class="project-outer">
                         <div class="project-inner">
                             <a href="https://wev-dev.netlify.app/projects/web-projects/css/profile-card/" target="_blank">
@@ -55,6 +63,27 @@
                                 <img src="/projects/tribute-website.PNG" alt="tribute-website">
                             </a>
                             <h3 class="project-name">Tribute Website</h3>
+                        </div>
+                    </div>
+                </article>
+                <article class="js-projects">
+                    <h2 class="project-types-heading">2. JavaScript Projects</h2>
+                    <select id="sort-projects-2" class="sort-option">
+                        <option value="newer">Newer</option>
+                        <option value="older">Older</option>
+                    </select>
+                    <div class="project-outer">
+                        <div class="project-inner">
+                            <a href="https://wev-dev.netlify.app/projects/web-projects/js/life-timer-app/" target="_blank">
+                                <img src="/projects/life-timer-app.PNG" alt="life-timer-app">
+                            </a>
+                            <h3 class="project-name">Life Timer App</h3>
+                        </div>
+                        <div class="project-inner">
+                            <a href="https://wev-dev.netlify.app/projects/web-projects/js/random-image-generator/" target="_blank">
+                                <img src="/projects/random-image-generator.PNG" alt="random-image-generator">
+                            </a>
+                            <h3 class="project-name">Random Image Generator</h3>
                         </div>
                     </div>
                 </article>

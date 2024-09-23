@@ -88,6 +88,22 @@
 }
 
 /* Page : Projects */
+.projects-page article{
+    margin-bottom: 45px;
+}
+.project-heading{
+    font-size: 2rem; color: white;
+}
+
+.css-projects{
+    margin-top: 40px;
+}
+.project-types-heading{
+    color: #eee;
+}
+.sort-option{
+    padding: 5px; margin: auto 10px 10px auto; font-size: 1rem; display: none; background-color: #aaa; border: 1px solid black; outline: none;
+}
 .project-outer{
     display: flex; flex-wrap: wrap; gap: 1rem;
 }

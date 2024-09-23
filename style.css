@@ -156,6 +156,17 @@ footer{
     margin: 5px auto;
 }
 
+/* Universal Styles */
+.text-center{
+    text-align: center;
+}
+.text-light{
+    color: #bbb;
+}
+.text-readable{
+    font-size: 1.15rem; line-height: 1.5;
+}
+
 /* Media Screen */
 @media screen and (max-width: 767px){
     .top-nav{
