@@ -108,7 +108,7 @@
     display: flex; flex-wrap: wrap; gap: 1rem;
 }
 .project-inner{
-    width: 23.5%; position: relative; overflow: hidden; border-radius: 5px;
+    flex-basis: calc(25% - (3rem/4)); position: relative; overflow: hidden; border-radius: 5px;
 }
 .project-inner img{
     width: 100%;
@@ -120,17 +120,21 @@
     bottom: 0;
 }
 
+/* Media screen */
 @media screen and (max-width: 1300px){
     .project-inner{
-        width: 31.5%;
+        flex-basis: calc(33.3% - (2rem/3));
     }
 }
 @media screen and (max-width: 767px){
-    .project-inner{
-        width: 47.5%;
-    }
     .project-outer{
         gap: 0.8rem;
+    }
+    .project-inner{
+        flex-basis: calc(50% - (1.6rem/2));
+    }
+    .project-inner > h3{
+        padding: 4px 0; font-size: 1rem;
     }
 }
 @media screen and (max-width: 560px){
