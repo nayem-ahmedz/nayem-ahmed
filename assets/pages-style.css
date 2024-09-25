@@ -94,12 +94,12 @@
 .project-heading{
     font-size: 2rem; color: white;
 }
+.project-types-heading{
+    color: #eee;
+}
 
 .css-projects{
     margin-top: 40px;
-}
-.project-types-heading{
-    color: #eee;
 }
 .sort-option{
     padding: 5px; margin: auto 10px 10px auto; font-size: 1rem; display: none; background-color: #aaa; border: 1px solid black; outline: none;
@@ -111,13 +111,16 @@
     flex-basis: calc(25% - (3rem/4)); position: relative; overflow: hidden; border-radius: 5px;
 }
 .project-inner img{
-    width: 100%;
+    width: 100%; transition: all 0.3s;
 }
-.project-inner > h3{
+.project-name{
     position: absolute; bottom: -80px; background-color: #eee; width: 100%; padding: 12px 0; margin: 0; text-align: center; transition: all 0.5s; box-shadow: 0 0 5px black;
 }
 .project-inner:hover .project-name{
     bottom: 0;
+}
+.project-inner:hover img{
+    transform: scale(0.95);
 }
 
 /* Media screen */
@@ -131,9 +134,9 @@
         gap: 0.8rem;
     }
     .project-inner{
-        flex-basis: calc(50% - (1.6rem/2));
+        flex-basis: calc(50% - (0.8rem/2));
     }
-    .project-inner > h3{
+    .project-name{
         padding: 4px 0; font-size: 1rem;
     }
 }
@@ -147,9 +150,15 @@
     #success-message{
         width: 90%;
     }
+    .project-name{
+        bottom: 0; background-color: #ccc; opacity: 0.9; font-weight: 500;
+    }
 }
 @media screen and (max-width: 400px){
     .captcha-div{
         transform: scale(0.8); margin: 0;
+    }
+    .project-name{
+        font-size: 0.8rem;
     }
 }
