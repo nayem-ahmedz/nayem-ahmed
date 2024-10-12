@@ -126,6 +126,17 @@
     margin-left: 5px;
 }
 
+/* 404 Error Page */
+.error-404 > button{
+    opacity: 0.6;
+}
+.error-404 h2{
+    color: red; text-align: left; font-weight: 600 !important;
+}
+.error-404 h3{
+    text-align: left; color: rgba(0,0,0, 0.7) !important; font-weight: lighter; margin-bottom: 2rem; line-height: 1.25;
+}
+
 /* Media screen */
 @media screen and (max-width: 1300px){
     .project-inner{
