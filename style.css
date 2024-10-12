@@ -11,7 +11,7 @@ main{
     flex-grow: 1;
 }
 .wrapper{
-    max-width: 1300px; margin: auto; padding-left: 10px; padding-right: 10px;
+    max-width: 1400px; margin: auto; padding-left: 10px; padding-right: 10px;
 }
 
 /* Header */
@@ -118,6 +118,39 @@ main{
 }
 
 
+/* Services Section */
+#service-section{
+    margin-top: 70px; margin-bottom: 100px; padding: 0 5px;
+}
+.services-cont{
+    color: white;
+}
+.services-row{
+    display: flex; gap: 1.5rem; flex-wrap: wrap;
+}
+.services-col{
+    background-color: rgba(0,0,0,0.35); flex: 1; padding: 30px 20px; border-radius: 10px; color: lightblue; position: relative;
+}
+.services-col > i{
+    font-size: 2rem; color: orange;
+}
+.services-col > h3{
+    font-size: 1.3rem;
+}
+.services-col > p{
+    line-height: 1.3; opacity: 0.85; margin-bottom: 30px;
+}
+.services-col > button, .services-col > a{
+    padding: 7px 20px; border: 1px solid rgba(255,255,255,0.2); border-radius: 10px; background-color: rgba(0,0,0,0.25); color: lightblue; font-size: 0.9rem; opacity: 0.7; transition: all 0.3s; cursor: pointer; position: absolute; bottom: 10px; right: 10px; z-index: 1;
+}
+.services-col > a{
+    width: fit-content; text-decoration: none;
+}
+.services-col > button:hover, .services-col > a:hover{
+    opacity: 1;
+}
+
+
 /* footer */
 footer{
     padding-top: 15px; padding-bottom: 20px; color: #aaa; background-color: rgba(0,0,0,0.5);
@@ -166,8 +199,16 @@ footer{
 .text-readable{
     font-size: 1.15rem; line-height: 1.5;
 }
+.fs-h2{
+    font-size: 1.8rem;
+}
 
 /* Media Screen */
+@media screen and (max-width: 1023px){
+    .services-col{
+        flex-basis: calc(50% - (3rem/2));
+    }
+}
 @media screen and (max-width: 767px){
     .top-nav{
         position: absolute; top: 25px; right: -13px; z-index: 1; background-color: rgba(0,0,0,0.7); width: 250px; height: 350px; text-align: right; padding: 20px 5px; opacity: 0; pointer-events: none;
@@ -185,6 +226,12 @@ footer{
 @media screen and (max-width: 580px){
     .footer-cont > div{
         width: 100%;
+    }
+    .services-row{
+        justify-content: center;
+    }
+    .services-col{
+        flex: 0 0 95%;
     }
 }
 @media screen and (max-width: 424px){

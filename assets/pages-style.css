@@ -122,6 +122,9 @@
 .project-inner:hover img{
     transform: scale(0.95);
 }
+.github-link{
+    margin-left: 5px;
+}
 
 /* Media screen */
 @media screen and (max-width: 1300px){
