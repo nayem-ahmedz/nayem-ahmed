@@ -9,4 +9,4 @@ function toggleNav(){
 
 //update footer last-update-date
 const lastUpdate = document.getElementById('footer-date-update');
-lastUpdate.textContent = 'September 2024';
+lastUpdate.textContent = 'October 2024';
