@@ -120,7 +120,7 @@
     bottom: 0;
 }
 .project-inner:hover img{
-    transform: scale(0.95);
+    transform: scale(1.1);
 }
 .github-link{
     margin-left: 5px;
