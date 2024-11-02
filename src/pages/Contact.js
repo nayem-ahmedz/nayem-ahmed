@@ -12,7 +12,7 @@ function Contact(){
                     <div data-netlify-recaptcha="true" className="captcha-div"></div>
                     <p id="error-message" style={{display: 'none'}}>Error.message</p>
                     <p style={{color: 'red'}}>
-                        Under Construction
+                        Under Construction!
                     </p>
                     <input type="submit" value="Send" id="send-btn" disabled />
                 </form>
