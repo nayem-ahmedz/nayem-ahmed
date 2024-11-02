@@ -16,7 +16,7 @@ function Footer(){
                     <p>
                         <a href="https://wev-dev.netlify.app/" title="Check out my Practice Tasks" target="_blank" rel="noopener noreferrer">Front-end Journey</a> :: <Link to="/pages/blog">Blog</Link> :: <Link to="/pages/contact">Contact</Link>
                     </p>
-                    <p>@Nayem's Portfolio | <span id="footer-date-update">September 2024</span></p>
+                    <p>@Nayem's Portfolio | <span id="footer-date-update">October 2024</span></p>
                 </div>
             </div>
         </footer>

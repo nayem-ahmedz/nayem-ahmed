@@ -210,7 +210,7 @@ footer{
 }
 @media screen and (max-width: 767px){
     .top-nav{
-        position: absolute; top: 25px; right: -13px; z-index: 1; background-color: rgba(0,0,0,0.7); width: 250px; height: 350px; text-align: right; padding: 20px 5px; opacity: 0; pointer-events: none;
+        position: absolute; top: 25px; right: -13px; z-index: 1; background-color: rgba(0,0,0,0.8); width: 250px; height: 350px; text-align: right; padding: 20px 5px; opacity: 0; pointer-events: none;
     }
     .top-nav li{
         display: block;

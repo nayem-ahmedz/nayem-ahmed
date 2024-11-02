@@ -43,7 +43,7 @@
     resize: none; height: 80px;
 }
 .contact-form > input[type="submit"]{
-    width: auto; padding: 8px 20px; border-radius: 15px; cursor: pointer;
+    width: auto; padding: 8px 20px; border-radius: 15px; cursor: not-allowed;
 }
 .contact-form > input[type="submit"]:hover{
     background-color: black; color: white;
@@ -66,10 +66,10 @@
     width: 400px; padding: 20px 20px 55px; background-color: white; text-align: center; border-radius: 10px; box-shadow: 0 0 5px black;
 }
 #sm-cross-btn{
-    display: block; margin-left: auto; padding: 5px 8px 4px; font-size: 1rem; color: red;
+    display: block; margin-left: 80%; padding: 5px 8px 4px; font-size: 1rem; color: rgba(255,0,0,0.8); text-decoration: none;
 }
 #sm-cross-btn:hover{
-    background-color: red; color: white; border-color: red;
+    background-color: red; color: white;
 }
 #success-message > h2{
     font-weight: 400; opacity: 0.9;
@@ -92,7 +92,7 @@
     margin-bottom: 45px;
 }
 .project-heading{
-    font-size: 2rem; color: white;
+    font-size: 2rem; color: white; margin-top: 8rem;
 }
 .project-types-heading{
     color: #eee;
