@@ -7,7 +7,7 @@ function Home(){
         <section>
             <div className="wrapper main-cont">
                 <div>
-                    <img src={profileImg} alt="nayem ahmed's picture" className="user-image" />
+                    <img src={profileImg} alt="nayem ahmed" className="user-image" />
                 </div>
                 <div className="main-cont-right">
                     <p className="mcr-hey">Hey There, I am</p>
