@@ -66,7 +66,7 @@ function Projects(){
                         </div>
                         <div className="project-inner">
                             <a href="https://wev-dev.netlify.app/projects/web-projects/js/random-image-generator/" target="_blank" rel="noopener noreferrer">
-                                <img src={randomImg} alt="Random Image Generator screenshot" />
+                                <img src={randomImg} alt="Project screenshot" />
                             </a>
                             <h3 className="project-name">Random Image Generator</h3>
                         </div>
