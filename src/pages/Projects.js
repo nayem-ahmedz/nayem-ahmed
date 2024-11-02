@@ -27,25 +27,25 @@ function Projects(){
                     <div className="project-outer">
                         <div className="project-inner">
                             <a href="https://wev-dev.netlify.app/projects/web-projects/css/profile-card/" target="_blank" rel="noopener noreferrer">
-                                <img src={profileCard} alt="Profile Card" />
+                                <img src={profileCard} alt="Profile Card screenshot" />
                             </a>
                             <h3 className="project-name">Profile Card</h3>
                         </div>
                         <div className="project-inner">
                             <a href="https://wev-dev.netlify.app/projects/web-projects/css/parallax-website/" target="_blank" rel="noopener noreferrer">
-                                <img src={parralaxWeb} alt="Parallax Website" />
+                                <img src={parralaxWeb} alt="Parallax Website screenshot" />
                             </a>
                             <h3 className="project-name">Parallax Website</h3>
                         </div>
                         <div className="project-inner">
                             <a href="https://wev-dev.netlify.app/projects/web-projects/css/tribute-website/" target="_blank" rel="noopener noreferrer">
-                                <img src={tributeWeb} alt="Tribute Website" />
+                                <img src={tributeWeb} alt="Tribute Website screenshot" />
                             </a>
                             <h3 className="project-name">Tribute Website</h3>
                         </div>
                         <div className="project-inner">
                             <a href="https://wev-dev.netlify.app/projects/furniture-website/" target="_blank" rel="noopener noreferrer">
-                                <img src={furnitureWeb} alt="Furniture Website" />
+                                <img src={furnitureWeb} alt="Furniture Website screenshot" />
                             </a>
                             <h3 className="project-name">Furniture Website</h3>
                         </div>
@@ -60,13 +60,13 @@ function Projects(){
                     <div className="project-outer">
                         <div className="project-inner">
                             <a href="https://wev-dev.netlify.app/projects/web-projects/js/life-timer-app/" target="_blank" rel="noopener noreferrer">
-                                <img src={lifeTimer} alt="Life Timer App" />
+                                <img src={lifeTimer} alt="Life Timer App screenshot" />
                             </a>
                             <h3 className="project-name">Age Calculator</h3>
                         </div>
                         <div className="project-inner">
                             <a href="https://wev-dev.netlify.app/projects/web-projects/js/random-image-generator/" target="_blank" rel="noopener noreferrer">
-                                <img src={randomImg} alt="Random Image Generator" />
+                                <img src={randomImg} alt="Random Image Generator screenshot" />
                             </a>
                             <h3 className="project-name">Random Image Generator</h3>
                         </div>
@@ -81,7 +81,7 @@ function Projects(){
                     <div className="project-outer">
                         <div className="project-inner">
                             <a href="https://simple-ludo-game.netlify.app/" target="_blank" rel="noopener noreferrer">
-                                <img src={simpleLudo} alt="Simple Ludo" />
+                                <img src={simpleLudo} alt="Simple Ludo screenshot" />
                             </a>
                             <h3 className="project-name">Simple Ludo</h3>
                         </div>
@@ -96,13 +96,13 @@ function Projects(){
                     <div className="project-outer">
                         <div className="project-inner">
                             <a href="https://uni-project1.netlify.app/" target="_blank" rel="noopener noreferrer">
-                                <img src={bdmsWeb} alt="Blood Donation Management System" />
+                                <img src={bdmsWeb} alt="Blood Donation Management System screenshot" />
                             </a>
                             <h3 className="project-name">Blood Donation MS</h3>
                         </div>
                         <div className="project-inner">
                             <a href="https://github.com/nayem-ahmedz/student-parent-portal" target="_blank" rel="noopener noreferrer" title="GitHub repository link">
-                                <img src={spPortal} alt="Student-Parent Portal" />
+                                <img src={spPortal} alt="Student-Parent Portal screenshot" />
                             </a>
                             <h3 className="project-name">
                                 Student-Parent Portal
