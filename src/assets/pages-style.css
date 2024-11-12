@@ -43,7 +43,7 @@
     resize: none; height: 80px;
 }
 .contact-form > input[type="submit"]{
-    width: auto; padding: 8px 20px; border-radius: 15px; cursor: not-allowed;
+    width: auto; padding: 8px 20px; border-radius: 15px; cursor: pointer;
 }
 .contact-form > input[type="submit"]:hover{
     background-color: black; color: white;
@@ -52,10 +52,16 @@
     outline: 1px solid black;
 }
 #error-message{
-    visibility: hidden; color: yellow;
+    color: yellow;
+}
+.e-m-visible{
+    visibility: visible;
 }
 .captcha-div{
     display: block; width: 80%; margin: auto;
+}
+.invisible-text{
+    visibility: hidden;
 }
 
 /* Message Section */

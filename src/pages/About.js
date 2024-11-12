@@ -1,15 +1,16 @@
-import React from 'react';
-import userImg from '../assets/nayem-ahmed.png';
+import React, { useEffect } from 'react';
+import userImg from '../assets/nayem-ahmed.webp';
 
 function About(){
+    useEffect(() => {document.title = 'About | Nayem Ahmed'}, []);
     return(
         <section>
             <div className="wrapper about-main">
                 <div className="about-top">
-                    <img src={userImg} alt="nayem ahmed" className="user-image" />
+                    <img src={userImg} alt="Nayem Ahmed, Front-end Web Developer" className="user-image" />
                     <h1 className="mcr-name">Nayem Ahmed</h1>
                     <ul>
-                        <li>Front-end Web Developer</li>
+                        <li>Front-End Web Developer</li>
                         <li>Content Creator</li>
                         <li>Programmer</li>
                     </ul>

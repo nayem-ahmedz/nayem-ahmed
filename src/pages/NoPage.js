@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 function NoPage(){
+    useEffect(() => {document.title = '404 - Page Not Found'}, []);
     return(
         <section className="wrapper message-section">
             <article id="success-message" className="error-404">

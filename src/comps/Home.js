@@ -1,8 +1,10 @@
 import React from 'react';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import profileImg from '../assets/nayem-ahmed.png';
+import profileImg from '../assets/nayem-ahmed.webp';
 
 function Home(){
+    useEffect(() => {document.title = 'Nayem Ahmed | Front-end Web Developer'}, []);
     return(
         <section>
             <div className="wrapper main-cont">

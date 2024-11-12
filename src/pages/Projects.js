@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect } from 'react';
 import profileCard from '../projects/profile-card.PNG';
 import parralaxWeb from '../projects/parallax-website.webp';
 import tributeWeb from '../projects/tribute-website.PNG';
@@ -10,6 +11,7 @@ import bdmsWeb from '../projects/blood-donation-management-system.PNG';
 import spPortal from '../projects/student-parent-portal.PNG';
 
 function Projects(){
+    useEffect(() => {document.title = 'Projects | Nayem Ahmed'}, []);
     return(
         <section>
             <div className="wrapper">
