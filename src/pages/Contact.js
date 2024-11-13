@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 
 function Contact(){
     useEffect(() => {document.title = 'Contact | Nayem Ahmed'}, []);
-    const [error, setError] = useState('');
+    const [error, setError] = useState('Under Maintainance!');
     const [submitted, setSubmitted] = useState(false);
     const [inputs, setInputs] = useState({
         name: '',
@@ -45,7 +45,7 @@ function Contact(){
                     submitted ? (
                         <h3 className='success-message'>Thank you for your message. <br /> I will get back to you soon</h3>
                     ) : (
-                        <form name="Contact-Form" method="POST" data-netlify-recaptcha="true" className="contact-form" onSubmit={(e) => handleSubmit(e)} netlify>
+                        <form name="Contact-Form" method="POST" data-netlify-recaptcha="true" data-netlify="true" className="contact-form" onSubmit={(e) => handleSubmit(e)}>
                             <input type="hidden" name="form-name" value="Contact-Form" />
 
                             <input type="text" id="name" name="name" value={inputs.name} onChange={(e) => handleInputs(e)} placeholder="Your Name" />
@@ -58,7 +58,7 @@ function Contact(){
                             {
                                 error ? <p id="error-message"> { error } </p> : <p className='invisible-text'>invisible</p>
                             }
-                            <input type="submit" value="Send" id="send-btn" />
+                            <input type="submit" value="Send" id="send-btn" disabled />
                         </form>
                     )
                 }
