@@ -6,7 +6,7 @@ function NoPage(){
     useEffect(() => {document.title = '404 - Page Not Found'}, []);
     return(
         <section className="wrapper message-section">
-            <article id="success-message" className="error-404">
+            <article className="message-text error-404">
                 <Link id="sm-cross-btn" to='/pages/contact'>Report</Link>
                 <h2>404 Page Not Found</h2>
                 <h3>Looks like you've followed a broken link or entered a URL that doesn't exist on my site. In case of missing page, Hit report!</h3>

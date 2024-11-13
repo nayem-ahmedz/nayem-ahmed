@@ -54,6 +54,9 @@
 #error-message{
     color: yellow;
 }
+.success-message{
+    line-height: 1.7; color: yellow; margin-top: 2.5rem;
+}
 .e-m-visible{
     visibility: visible;
 }
@@ -68,7 +71,7 @@
 .message-section{
     min-height: 600px; display: flex; justify-content: center; align-items: center; text-align: center;
 }
-#success-message{
+.message-text{
     width: 400px; padding: 20px 20px 55px; background-color: white; text-align: center; border-radius: 10px; box-shadow: 0 0 5px black;
 }
 #sm-cross-btn{
@@ -77,10 +80,10 @@
 #sm-cross-btn:hover{
     background-color: red; color: white;
 }
-#success-message > h2{
+.message-text > h2{
     font-weight: 400; opacity: 0.9;
 }
-#success-message > h3{
+.message-text > h3{
     color: blue;
 }
 .back-home-link{
