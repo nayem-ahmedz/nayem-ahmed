@@ -39,7 +39,7 @@ function Contact(){
     return(
         <section className="contact-section">
             <div className="contact-form-field">
-                <h1>Contact Me!</h1>
+                <h1>Contact Me</h1>
                 {
                     submitted ? (
                         <h3 className='success-message'>Thank you for your message. <br /> I will get back to you soon</h3>
