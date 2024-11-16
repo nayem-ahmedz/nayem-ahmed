@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 
 function Contact(){
     useEffect(() => {document.title = 'Contact | Nayem Ahmed'}, []);
-    const [error, setError] = useState('Under Maintainance!');
+    const [error, setError] = useState('');
     const [submitted, setSubmitted] = useState(false);
     const [inputs, setInputs] = useState({
         name: '',
@@ -58,7 +58,7 @@ function Contact(){
                             {
                                 error ? <p id="error-message"> { error } </p> : <p className='invisible-text'>invisible</p>
                             }
-                            <input type="submit" value="Send" id="send-btn" disabled />
+                            <input type="submit" value="Send" id="send-btn" />
                         </form>
                     )
                 }
