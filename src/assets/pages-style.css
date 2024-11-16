@@ -43,7 +43,7 @@
     resize: none; height: 80px;
 }
 .contact-form > input[type="submit"]{
-    width: auto; padding: 8px 20px; border-radius: 15px; cursor: pointer;
+    width: auto; padding: 8px 20px; border-radius: 15px; cursor: not-allowed;
 }
 .contact-form > input[type="submit"]:hover{
     background-color: black; color: white;
