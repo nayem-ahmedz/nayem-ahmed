@@ -16,6 +16,11 @@ function Contact(){
             ...prev, [name] : value
         }));
     }
+    const encode = (data) => {
+        return Object.keys(data)
+            .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+            .join("&");
+    }
     const handleSubmit = (e) => {
         e.preventDefault();
         if(!inputs.name || !inputs.email || !inputs.message){
@@ -28,14 +33,14 @@ function Contact(){
         }
         setError('');
         setSubmitted(true);
-        // const formData = new URLSearchParams(inputs).toString();
-        // fetch('/', {
-        //     method: 'POST',
-        //     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        //     body: formData
-        // })
-        //     .then(() => setSubmitted(true))
-        //     .catch(() => setError('Form submission failed! Please try again'));
+        //const formData = new URLSearchParams(inputs).toString();
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "Contact-Form", ...inputs }),
+          })
+            .then(() => setSubmitted(true))
+            .catch(() => setError("Form submission failed! Please try again"));
     }
     return(
         <section className="contact-section">
