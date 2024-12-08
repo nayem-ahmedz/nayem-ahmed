@@ -28,14 +28,14 @@ function Contact(){
         }
         setError('');
         setSubmitted(true);
-        const formData = new URLSearchParams(inputs).toString();
-        fetch('/', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: formData
-        })
-            .then(() => setSubmitted(true))
-            .catch(() => setError('Form submission failed! Please try again'));
+        // const formData = new URLSearchParams(inputs).toString();
+        // fetch('/', {
+        //     method: 'POST',
+        //     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        //     body: formData
+        // })
+        //     .then(() => setSubmitted(true))
+        //     .catch(() => setError('Form submission failed! Please try again'));
     }
     return(
         <section className="contact-section">
