@@ -50,7 +50,7 @@ function Contact(){
                     submitted ? (
                         <h3 className='success-message'>Thank you for your message. <br /> I will get back to you soon</h3>
                     ) : (
-                        <form name="Contact-Form" method="POST" className="contact-form" onSubmit={(e) => handleSubmit(e)} data-netlify-recaptcha="true" data-netlify="true">
+                        <form name="Contact-Form" method="POST" className="contact-form" onSubmit={(e) => handleSubmit(e)} data-netlify="true" data-netlify-recaptcha="true">
                             {/* data-netlify-recaptcha="true" data-netlify="true" */}
                             <input type="hidden" name="form-name" value="Contact-Form" />
 
