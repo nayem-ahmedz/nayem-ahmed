@@ -4,6 +4,7 @@ import profileCard from '../projects/profile-card.PNG';
 import parralaxWeb from '../projects/parallax-website.webp';
 import tributeWeb from '../projects/tribute-website.PNG';
 import furnitureWeb from '../projects/furniture-website.webp';
+import tpaWeb from '../projects/time-planner-app.webp';
 import lifeTimer from '../projects/life-timer-app.webp';
 import randomImg from '../projects/random-image-generator.PNG';
 import simpleLudo from '../projects/simple-ludo.PNG';
@@ -50,6 +51,12 @@ function Projects(){
                                 <img src={furnitureWeb} alt="Furniture Website screenshot" />
                             </a>
                             <h3 className="project-name">Furniture Website</h3>
+                        </div>
+                        <div className="project-inner">
+                            <a href="https://wev-dev.netlify.app/projects/time-planner-app/" target="_blank" rel="noopener noreferrer">
+                                <img src={tpaWeb} alt="Time Planner App website screenshot" />
+                            </a>
+                            <h3 className="project-name">Time Planner App</h3>
                         </div>
                     </div>
                 </article>
