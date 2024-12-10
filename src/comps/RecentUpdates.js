@@ -9,7 +9,7 @@ function RecentUpdates(){
                     Preapred a Machine Learning Project using Online Shoppers Purchasing Intention Dataset
                 </li>
                 <li>
-                    Attending Semester Final Exam
+                    Appeared in Semester Final Exam
                 </li>
             </ul>
         </article>

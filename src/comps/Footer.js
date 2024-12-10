@@ -9,7 +9,7 @@ function Footer(){
                     <p>Follow me on</p>
                     <a href="http://www.linkedin.com/in/nayem-ahmedz" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/nayem-ahmedz/" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-github"></i></a>
-                    <a href="https://web.facebook.com/nayemAhmedz" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-facebook"></i></a>
+                    <a href="https://web.facebook.com/nayemahmed2z" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-facebook"></i></a>
                     <a href="https://www.youtube.com/@nayemscanvas" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-youtube"></i></a>
                 </div>
                 <div className="footer-right">
