@@ -11,7 +11,7 @@ header, footer{
     flex-shrink: 0;
 }
 main{
-    flex-grow: 1;
+    flex-grow: 1; margin-bottom: 60px;
 }
 .wrapper{
     max-width: 1400px; margin: auto; padding-left: 10px; padding-right: 10px;

@@ -11,7 +11,7 @@ import Contact from './pages/Contact';
 import Projects from './pages/Projects';
 import NoPage from './pages/NoPage';
 import ScrollTo from './comps/ScrollTo';
-//import Skills from './comps/Skills';
+import Skills from './comps/Skills';
 
 function App() {
   return (
@@ -27,7 +27,7 @@ function App() {
         <Route path='*' element={<NoPage />} />
       </Routes>
       <Services />
-      {/* <Skills /> */}
+      <Skills />
       </main>
       <Footer />
     </BrowserRouter>
