@@ -4,14 +4,12 @@ import './App.css';
 import './assets/pages-style.css';
 import Header from './comps/Header';
 import Home from './comps/Home';
-import Services from './comps/Services';
 import Footer from './comps/Footer';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
 import NoPage from './pages/NoPage';
 import ScrollTo from './comps/ScrollTo';
-import Skills from './comps/Skills';
 
 function App() {
   return (
@@ -26,8 +24,6 @@ function App() {
         <Route path='/pages/projects' element={<Projects />} />
         <Route path='*' element={<NoPage />} />
       </Routes>
-      <Services />
-      <Skills />
       </main>
       <Footer />
     </BrowserRouter>

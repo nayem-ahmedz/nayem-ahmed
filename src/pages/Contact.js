@@ -1,5 +1,7 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
+import Services from '../comps/Services';
+import Skills from '../comps/Skills';
 
 function Contact(){
     useEffect(() => {document.title = 'Contact | Nayem Ahmed'}, []);
@@ -43,32 +45,36 @@ function Contact(){
             .catch(() => setError("Form submission failed! Please try again"));
     }
     return(
-        <section className="contact-section">
-            <div className="contact-form-field">
-                <h1>Contact Me</h1>
-                {
-                    submitted ? (
-                        <h3 className='success-message'>Thank you for your message. <br /> I will get back to you soon</h3>
-                    ) : (
-                        <form name="Contact-Form" method="POST" className="contact-form" onSubmit={(e) => handleSubmit(e)} data-netlify="true" data-netlify-recaptcha="true">
-                            <input type="hidden" name="form-name" value="Contact-Form" />
+        <>
+            <section className="contact-section">
+                <div className="contact-form-field">
+                    <h1>Contact Me</h1>
+                    {
+                        submitted ? (
+                            <h3 className='success-message'>Thank you for your message. <br /> I will get back to you soon</h3>
+                        ) : (
+                            <form name="Contact-Form" method="POST" className="contact-form" onSubmit={(e) => handleSubmit(e)} data-netlify="true" data-netlify-recaptcha="true">
+                                <input type="hidden" name="form-name" value="Contact-Form" />
 
-                            <input type="text" id="name" name="name" value={inputs.name} onChange={(e) => handleInputs(e)} placeholder="Your Name" />
+                                <input type="text" id="name" name="name" value={inputs.name} onChange={(e) => handleInputs(e)} placeholder="Your Name" />
 
-                            <input type="email" id="email" name="email" value={inputs.email} onChange={(e) => handleInputs(e)} placeholder="Your Email" />
+                                <input type="email" id="email" name="email" value={inputs.email} onChange={(e) => handleInputs(e)} placeholder="Your Email" />
 
-                            <textarea id="message" name="message" value={inputs.message} onChange={(e) => handleInputs(e)} placeholder="How can I help you?"></textarea>
+                                <textarea id="message" name="message" value={inputs.message} onChange={(e) => handleInputs(e)} placeholder="How can I help you?"></textarea>
 
-                            <div data-netlify-recaptcha="true" className="captcha-div"></div>
-                            {
-                                error ? <p id="error-message"> { error } </p> : <p className='invisible-text'>invisible</p>
-                            }
-                            <input type="submit" value="Send" id="send-btn"/>
-                        </form>
-                    )
-                }
-            </div>
-        </section>
+                                <div data-netlify-recaptcha="true" className="captcha-div"></div>
+                                {
+                                    error ? <p id="error-message"> { error } </p> : <p className='invisible-text'>invisible</p>
+                                }
+                                <input type="submit" value="Send" id="send-btn"/>
+                            </form>
+                        )
+                    }
+                </div>
+            </section>
+            <Services />
+            <Skills />
+        </>
     );
 }
 
