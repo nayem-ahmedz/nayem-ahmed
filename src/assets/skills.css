@@ -13,3 +13,6 @@
 .box-inner{
     width: 1%; height: 100%; background-image: linear-gradient(to right, rgba(255,255,255,0.2), rgba(173, 216, 230, 0.8)); line-height: 2.4; color: #eee; text-shadow: 0 0 5px black; overflow: hidden; transition: width 2s ease-in; text-align: right; font-weight: 600;
 }
+.box-inner > i{
+    margin-right: 10px; margin-left: 5px; font-size: 1.15rem; vertical-align: text-bottom;
+}

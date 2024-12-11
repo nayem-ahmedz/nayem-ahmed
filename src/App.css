@@ -152,6 +152,23 @@ main{
     opacity: 1;
 }
 
+/* Recent Updates */
+.recent-updates{
+    color: white;
+}
+.recent-ul{
+    color: rgba(255,255,255,0.7);
+}
+.recent-ul li{
+    margin-bottom: 0.8rem; line-height: 1.7;
+}
+.recent-ul li a{
+    background-color: rgba(255,255,255, 0.5); padding: 4px 10px; text-decoration: none; margin-left: 5px; border-radius: 5px;
+}
+.recent-ul li a:hover{
+    background-color: white;
+}
+
 
 /* footer */
 footer{
