@@ -7,6 +7,9 @@ function RecentUpdates(){
             <h1>Recent Updates</h1>
             <ul className='recent-ul'>
                 <li>
+                    Exam is done, spending holidays
+                </li>
+                <li>
                     Appeared : Semester Final Exam
                 </li>
                 <li>
