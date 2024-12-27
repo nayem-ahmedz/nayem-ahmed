@@ -1,6 +1,6 @@
-import React from 'react'; //, { useEffect }
-import { BrowserRouter, Routes, Route } from 'react-router-dom'; //, useLocation
-//import ReactGA from 'react-ga4';
+import React, { useEffect } from 'react';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import ReactGA from 'react-ga4';
 import './App.css';
 import './assets/pages-style.css';
 import Header from './comps/Header';
@@ -12,12 +12,12 @@ import Projects from './pages/Projects';
 import NoPage from './pages/NoPage';
 import ScrollTo from './comps/ScrollTo';
 
-//const TRACKING_ID = 'G-0C71MXFTJN';
+const TRACKING_ID = 'G-0C71MXFTJN';
 
 function App() {
-  // useEffect(()=>{
-  //   ReactGA.initialize(TRACKING_ID);
-  // }, []);
+  useEffect(()=>{
+    ReactGA.initialize(TRACKING_ID);
+  }, []);
   return (
     <BrowserRouter>
       <Header />
@@ -32,11 +32,11 @@ function App() {
 
 //from partner : Mr GPT-x
 function RoutesWithAnalytics() {
-  // const location = useLocation();
+  const location = useLocation();
 
-  // useEffect(() => {
-  //   ReactGA.send({ hitType: "pageview", page: location.pathname });
-  // }, [location]);
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: location.pathname });
+  }, [location]);
 
   return (
     <Routes>
