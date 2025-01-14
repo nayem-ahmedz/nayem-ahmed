@@ -4,13 +4,16 @@ import { Link } from 'react-router-dom';
 function RecentUpdates(){
     return(
         <article className='wrapper recent-updates'>
-            <h1>Recent Updates</h1>
+            <h1>Recent Updates about me</h1>
             <ul className='recent-ul'>
+                <li>
+                    Back to Study : Final Year, 1st term
+                </li>
                 <li>
                     Exam is done, spending holidays
                 </li>
                 <li>
-                    Appeared : Semester Final Exam
+                    Appeared : Semester Final Exam - Summmer 2024
                 </li>
                 <li>
                     Prepared a Machine Learning Project using Online Shoppers Purchasing Intention Dataset <a href='https://github.com/nayem-ahmedz/ml-final-project' target='_blank' rel='noopener noreferrer'>Check Out <i className="fa-brands fa-github"></i> </a>
