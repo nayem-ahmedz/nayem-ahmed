@@ -1,6 +1,6 @@
 /* Page : About */
 .about-top{
-    padding: 50px 10px 20px; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #aaa;
+    padding: 70px 10px 20px; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #aaa;
 }
 .about-top > .mcr-name{
     color: #bbb; text-shadow: 0 0 8px black;

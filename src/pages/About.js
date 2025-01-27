@@ -10,7 +10,9 @@ function About(){
             <section>
                 <div className="wrapper about-main">
                     <div className="about-top">
-                        <img src={userImg} alt="Nayem Ahmed, Front-end Web Developer" className="user-image" />
+                        <div className='user-image-section'>
+                            <img src={userImg} alt="Nayem Ahmed, Front-end Web Developer" className="user-image" />
+                        </div>
                         <h1 className="mcr-name">Nayem Ahmed</h1>
                         <ul>
                             <li>Front-End Web Developer</li>
