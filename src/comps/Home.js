@@ -21,7 +21,7 @@ function Home(){
         <>
             <section>
                 <div className="wrapper main-cont">
-                    <div>
+                    <div className='user-image-section'>
                         <img src={profileImg} alt="nayem ahmed's pictures" className="user-image" />
                     </div>
                     <div className="main-cont-right">
