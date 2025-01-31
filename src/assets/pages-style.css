@@ -16,13 +16,13 @@
     padding: 20px 10px; margin-top: 20px; color: #eee;
 }
 .about-text > h2{
-    color: yellow; text-shadow: 0 0 5px black; font-size: 2rem; margin-bottom: 0;
+    color: #ccb; text-shadow: 0 0 5px black; font-size: 2rem; margin-bottom: 0;
 }
 .about-text > p{
     line-height: 1.35; font-size: 1.1rem;
 }
 .about-text > p::first-letter{
-    font-size: 1.4rem; margin-right: 2px; color: yellowgreen;
+    font-size: 1.5rem; margin-right: 1px;
 }
 
 
