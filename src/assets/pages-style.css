@@ -1,6 +1,6 @@
 /* Page : About */
 .about-top{
-    padding: 70px 10px 20px; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #aaa;
+    padding: 70px 0 20px; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #aaa;
 }
 .about-top > .mcr-name{
     color: #bbb; text-shadow: 0 0 8px black;
@@ -13,16 +13,38 @@
 }
 
 .about-text{
-    padding: 20px 10px; margin-top: 20px; color: #eee;
+    padding: 20px 0; margin-top: 20px; color: #eee;
 }
 .about-text > h2{
-    color: #ccb; text-shadow: 0 0 5px black; font-size: 2rem; margin-bottom: 0;
+    color: #ccb; text-shadow: 0 0 5px black; margin-bottom: 0;
 }
 .about-text > p{
     line-height: 1.35; font-size: 1.1rem;
 }
 .about-text > p::first-letter{
     font-size: 1.5rem; margin-right: 1px;
+}
+.about-icons{
+    margin-right: 6px;
+}
+
+/* Education */
+article.edu{
+    color: white;
+}
+.edu h2{
+    margin-bottom: 10px; color: #ccb; text-shadow: 0 0 5px black;
+}
+.edu h3,
+.edu h4,
+.edu-session{
+    margin: 8px auto; font-weight: lighter;
+}
+article.edu p,
+.about-text p,
+.edu h3,
+.edu h4{
+    color: rgba(255,255,255, 0.7);
 }
 
 

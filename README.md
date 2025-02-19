@@ -20,7 +20,7 @@ You can visit my Portffolio live here: [Nayem Ahmed's Portfolio](https://nayem-a
 ## Creation
 *Created on : 6 September 2024*
 *Coverted to React on : 1 November 2024*
-*Last updated on : 1 Feb 2025*
+*Last updated on : 20 Feb 2025*
 
 ## Contact Me
 If you would like to get in touch, feel free to connect via:
