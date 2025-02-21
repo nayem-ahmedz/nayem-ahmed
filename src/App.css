@@ -14,7 +14,7 @@ main{
     flex-grow: 1; margin-bottom: 60px;
 }
 .wrapper{
-    max-width: 1400px; margin: auto; padding-left: 10px; padding-right: 10px;
+    max-width: 1440px; margin: auto; padding-left: 20px; padding-right: 20px;
 }
 
 /* Header */
@@ -235,14 +235,23 @@ footer{
 .fs-h2{
     font-size: 1.8rem;
 }
+.hr-gray{
+    border-color: rgba(255,255,255, 0.05); margin-bottom: 1rem;
+}
 
 /* Media Screen */
 @media screen and (max-width: 1023px){
+    .wrapper{
+        padding-left: 15px; padding-right: 15px;
+    }
     .services-col{
         flex-basis: calc(50% - (3rem/2));
     }
 }
 @media screen and (max-width: 767px){
+    .wrapper{
+        padding-left: 12px; padding-right: 12px;
+    }
     .top-nav{
         position: absolute; top: 25px; right: -13px; z-index: 1; background-color: rgba(0,0,0,0.8); width: 250px; height: 350px; text-align: right; padding: 20px 5px; opacity: 0; pointer-events: none;
     }
