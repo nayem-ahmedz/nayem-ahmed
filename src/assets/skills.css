@@ -1,0 +1,18 @@
+.skill-texts{
+    color: #ccc;
+}
+.skills-section{
+    color: white; padding: 10px;
+}
+.tech-boxs{
+    margin-bottom: 2rem;
+}
+.box-outer{
+    width: 100%; height: 40px; border: 1px solid rgba(255,255,255,0.2);
+}
+.box-inner{
+    width: 1%; height: 100%; background-image: linear-gradient(to right, rgba(255,255,255,0.2), rgba(173, 216, 230, 0.8)); line-height: 2.4; color: #eee; text-shadow: 0 0 5px black; overflow: hidden; transition: width 2s ease-in; text-align: right; font-weight: 600;
+}
+.box-inner > i{
+    margin-right: 10px; margin-left: 5px; font-size: 1.15rem; vertical-align: text-bottom;
+}
