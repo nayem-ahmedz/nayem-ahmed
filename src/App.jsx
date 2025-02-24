@@ -12,12 +12,12 @@ import Projects from './pages/Projects';
 import NoPage from './pages/NoPage';
 import ScrollTo from './comps/ScrollTo';
 
-const TRACKING_ID = 'G-0C71MXFTJN';
+// const TRACKING_ID = 'G-0C71MXFTJN';
 
 function App() {
-  useEffect(()=>{
+  /* useEffect(()=>{
     ReactGA.initialize(TRACKING_ID);
-  }, []);
+  }, []); */
   return (
     <BrowserRouter>
       <Header />
@@ -32,11 +32,11 @@ function App() {
 
 //from partner : Mr GPT-x
 function RoutesWithAnalytics() {
-  const location = useLocation();
+  /* const location = useLocation();
 
   useEffect(() => {
     ReactGA.send({ hitType: "pageview", page: location.pathname });
-  }, [location]);
+  }, [location]); */
 
   return (
     <Routes>
