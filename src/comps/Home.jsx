@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 const profileImg = '/media/nayem-ahmed.webp';
+//const profileImg = '/media/nayem-ahmed2.jpg';
 import Services from './Services';
 import Skills from './Skills';
 import RecentUpdates from './RecentUpdates';
