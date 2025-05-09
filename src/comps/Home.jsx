@@ -29,7 +29,7 @@ function Home(){
                         <h3 className='mcr-rule'>I am a <span id='mcr-rule-title'> Front-end Web Developer </span></h3>
                         {/* { displayedText ? displayedText : 'Front-end Web Developer' } */}
                         <a href='/media/cv-nayem-ahmed.pdf' download='Nayem_Ahmed_CV.pdf' target='_blank' rel='noopener noreferrer' className='lets-talk'>Download CV</a>
-                        <Link to='/pages/contact' className='lets-talk'>Let's talk</Link>
+                        <Link to='/pages/contact' className='lets-talk'>Let's Talk</Link>
                     </div>
                 </div>
             </section>
