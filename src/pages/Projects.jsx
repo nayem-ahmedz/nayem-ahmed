@@ -1,14 +1,14 @@
 import { useEffect } from 'react';
-const profileCard = '/project-images/profile-card.PNG'; 
+const profileCard = '/project-images/profile-card.webp'; 
 const parralaxWeb = '/project-images/parallax-website.webp';
-const tributeWeb = '/project-images/tribute-website.PNG';
+const tributeWeb = '/project-images/tribute-website.webp';
 const furnitureWeb = '/project-images/furniture-website.webp';
 const tpaWeb = '/project-images/time-planner-app.webp';
 const lifeTimer = '/project-images/life-timer-app.webp';
-const randomImg = '/project-images/random-image-generator.PNG';
-const simpleLudo = '/project-images/simple-ludo.PNG';
-const bdmsWeb = '/project-images/blood-donation-management-system.PNG';
-const spPortal = '/project-images/student-parent-portal.PNG';
+const randomImg = '/project-images/random-image-generator.webp';
+const simpleLudo = '/project-images/simple-ludo.webp';
+const bdmsWeb = '/project-images/blood-donation-management-system.webp';
+const spPortal = '/project-images/student-parent-portal.webp';
 
 function Projects(){
     useEffect(() => {document.title = 'Projects | Nayem Ahmed'}, []);

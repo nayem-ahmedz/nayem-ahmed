@@ -20,11 +20,11 @@ You can visit my Portffolio live here: [Nayem Ahmed's Portfolio](https://nayem-a
 ## Creation
 *Created on : 6 September 2024*
 *Coverted to React App on : 1 November 2024 (vite/23-Feb-2025)*
-*Last updated on : 24 Feb 2025*
+*Last updated on : 20 May 2025*
 
 ## Contact Me
 If you would like to get in touch, feel free to connect via:
-+ Email : willbe-added@soon.com 
++ Email : nayemahmedz@proton.me 
 + Linkedin : www.linkedin.com/in/nayem-ahmedz
 + Github : https://github.com/nayem-ahmedz/
 
