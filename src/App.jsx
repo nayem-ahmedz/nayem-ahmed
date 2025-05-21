@@ -12,11 +12,14 @@ import Projects from './pages/Projects';
 import NoPage from './pages/NoPage';
 import ScrollTo from './comps/ScrollTo';
 
-const TRACKING_ID = 'G-0C71MXFTJN';
+const TRACKING_ID = import.meta.env.VITE_GA_TRACKING_ID;
 
 function App() {
   useEffect(()=>{
-    ReactGA.initialize(TRACKING_ID);
+    if(TRACKING_ID){
+      ReactGA.initialize(TRACKING_ID);
+      console.log("GA Tracking ID:", TRACKING_ID);
+    }
   }, []);
   return (
     <BrowserRouter>
@@ -35,7 +38,9 @@ function RoutesWithAnalytics() {
   const location = useLocation();
 
   useEffect(() => {
-    ReactGA.send({ hitType: "pageview", page: location.pathname });
+    if (TRACKING_ID) {
+      ReactGA.send({ hitType: "pageview", page: location.pathname });
+    }
   }, [location]);
 
   return (
