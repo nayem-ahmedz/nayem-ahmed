@@ -18,7 +18,6 @@ function App() {
   useEffect(()=>{
     if(TRACKING_ID){
       ReactGA.initialize(TRACKING_ID);
-      console.log("GA Tracking ID:", TRACKING_ID);
     }
   }, []);
   return (
