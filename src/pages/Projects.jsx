@@ -9,6 +9,7 @@ const randomImg = '/project-images/random-image-generator.webp';
 const simpleLudo = '/project-images/simple-ludo.webp';
 const bdmsWeb = '/project-images/blood-donation-management-system.webp';
 const spPortal = '/project-images/student-parent-portal.webp';
+const budgetTracker = '/project-images/budget-tracker.webp';
 
 function Projects(){
     useEffect(() => {document.title = 'Projects | Nayem Ahmed'}, []);
@@ -21,7 +22,8 @@ function Projects(){
     ];
     const jsProjects = [
         { id: 1, name: 'Age Calculator', link: 'https://wev-dev.netlify.app/projects/web-projects/js/life-timer-app/', ss: lifeTimer },
-        { id: 2, name: 'Random Image Generator', link: 'https://wev-dev.netlify.app/projects/web-projects/js/random-image-generator/', ss: randomImg }
+        { id: 2, name: 'Random Image Generator', link: 'https://wev-dev.netlify.app/projects/web-projects/js/random-image-generator/', ss: randomImg },
+        { id: 3, name: 'Budget Tracker', link: 'https://nz-budget-tracker.netlify.app/', ss: budgetTracker}
     ];
     const gameProjects = [
         { id: 1, name: 'Simple Ludo', link: 'https://simple-ludo-game.netlify.app/', ss: simpleLudo }
