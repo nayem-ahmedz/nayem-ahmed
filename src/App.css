@@ -16,6 +16,9 @@ main{
 .wrapper{
     max-width: 1440px; margin: auto; padding-left: 20px; padding-right: 20px;
 }
+.logo-svg{
+    width: 35px; height: auto; padding: 0 5px;
+}
 
 /* Header */
 header{

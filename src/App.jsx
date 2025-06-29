@@ -9,6 +9,7 @@ import Footer from './comps/Footer';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
+import Blog from './pages/Blog';
 import NoPage from './pages/NoPage';
 import ScrollTo from './comps/ScrollTo';
 
@@ -48,6 +49,7 @@ function RoutesWithAnalytics() {
       <Route path='/pages/about' element={<About />} />
       <Route path='/pages/contact' element={<Contact />} />
       <Route path='/pages/projects' element={<Projects />} />
+      <Route path='/pages/blog' element={<Blog />} />
       <Route path='*' element={<NoPage />} />
     </Routes>
   );
