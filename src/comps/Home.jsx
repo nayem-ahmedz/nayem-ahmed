@@ -7,7 +7,7 @@ import Skills from './Skills';
 import RecentUpdates from './RecentUpdates';
 
 function Home(){
-    useEffect(() => {document.title = 'Dev | Nayem Ahmed | Front-end Web Developer'}, []);
+    useEffect(() => {document.title = 'Nayem Ahmed | Front-end Web Developer'}, []);
     // const job = 'Front-end Web Developer';
     // const [displayedText, setDisText] = useState('');
     // const [jobIndex, setJobIndex] = useState(0);
