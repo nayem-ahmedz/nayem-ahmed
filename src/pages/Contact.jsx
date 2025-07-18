@@ -4,7 +4,7 @@ import Skills from '../comps/Skills';
 
 function Contact(){
     useEffect(() => {document.title = 'Contact | Nayem Ahmed'}, []);
-    const [error, setError] = useState(''); //under maintainance!
+    const [error, setError] = useState('Under Maintenance!');
     const [submitted, setSubmitted] = useState(false);
     const [inputs, setInputs] = useState({
         name: '',
@@ -63,9 +63,10 @@ function Contact(){
 
                                 <div data-netlify-recaptcha='true' className='captcha-div'></div>
                                 {
-                                    error ? <p id='error-message'> { error } </p> : <p className='invisible-text'>invisible</p>
+                                    error ? <h4 id='error-message'> { error } </h4> : <h4 className='invisible-text'>invisible</h4>
                                 }
-                                <input type='submit' value='Send' id='send-btn'/>
+                                <input type='submit' value='Send' id='send-btn' disabled/>
+                                <p className='error-message-new'>You can contact through <a href='mailto:nayemahmedz@proton.me'>Email</a> </p>
                             </form>
                         )
                     }
