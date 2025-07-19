@@ -2,4 +2,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://nayem-ahmedz.netlify.app/sitemap.xml
+Sitemap: https://nayem-ahmed.vercel.app/sitemap.xml
