@@ -1,8 +1,9 @@
 import { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import ReactGA from 'react-ga4';
-import './App.css';
-import './assets/pages-style.css';
+// import './App.css';
+import './new.css';
+// import './assets/pages-style.css';
 import Header from './comps/Header';
 import Home from './comps/Home';
 import Footer from './comps/Footer';
@@ -12,6 +13,7 @@ import Projects from './pages/Projects';
 import Blog from './pages/Blog';
 import NoPage from './pages/NoPage';
 import ScrollTo from './comps/ScrollTo';
+import Versions from './pages/Versions';
 
 const TRACKING_ID = import.meta.env.VITE_GA_TRACKING_ID;
 
@@ -25,7 +27,7 @@ function App() {
     <BrowserRouter>
       <Header />
       <ScrollTo />
-      <main>
+      <main className='container'>
         <RoutesWithAnalytics />
       </main>
       <Footer />
@@ -50,6 +52,7 @@ function RoutesWithAnalytics() {
       <Route path='/pages/contact' element={<Contact />} />
       <Route path='/pages/projects' element={<Projects />} />
       <Route path='/pages/blog' element={<Blog />} />
+      <Route path='/pages/versions' element={<Versions />} />
       <Route path='*' element={<NoPage />} />
     </Routes>
   );

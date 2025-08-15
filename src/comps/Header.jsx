@@ -3,10 +3,10 @@ import Nav from './Nav';
 function Header(){
     return(
         <header>
-            <div className='header-cont wrapper'>
-            <h1>Nayem's Space</h1>
-            <Nav />
-            </div>
+            <section className='container header-content'>
+                <h1 className='brand'>Nayem's Space</h1>
+                <Nav />
+            </section>
         </header>
     );
 }

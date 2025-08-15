@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 function Footer(){
     return(
         <footer>
-            <div className='wrapper footer-cont'>
+            <div className='container footer-cont'>
                 <div className='footer-links'>
                     <p>Follow me on</p>
                     <a href='http://www.linkedin.com/in/nayem-ahmedz' target='_blank' rel='noopener noreferrer'><i className='fa-brands fa-linkedin'></i></a>
@@ -13,9 +13,9 @@ function Footer(){
                 </div>
                 <div className='footer-right'>
                     <p>
-                        <a href='https://wev-dev.netlify.app/' title='Check out my Practice Tasks' target='_blank' rel='noopener noreferrer'>Front-end Journey</a> :: <Link to='/pages/blog'>Blog</Link> :: <Link to='/pages/contact'>Contact</Link>
+                        <a href='https://wev-dev.netlify.app/' title='Check out my Practice Tasks' target='_blank' rel='noopener noreferrer'>Front-end Journey</a> ~ <Link to='/pages/blog'>Blog</Link> ~ <Link to='/pages/contact'>Contact</Link>
                     </p>
-                    <p>@Nayem's Portfolio | <span id='footer-date-update'><small>20</small>24~25</span></p>
+                    <p>@Nayem's Portfolio | <small>20</small>24~25 | <Link to='/pages/versions'>v 2.00</Link> </p>
                 </div>
             </div>
         </footer>

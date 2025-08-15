@@ -1,5 +1,4 @@
 import { useInView } from 'react-intersection-observer';
-import '../assets/skills.css';
 const tailwindLogo = '/media/tailwindcss-mark.svg';
 
 function Skills(){
@@ -16,13 +15,13 @@ function Skills(){
         {id: 6, name: 'React Js', score: '80%', icon: 'fa-brands fa-react', color: '#61DAFB'}
     ];
     return(
-        <section ref={ref} className='skills-section wrapper'>
-            <h2 className='fs-h2 text-center'>My Skills</h2>
+        <section ref={ref} className='skills-section'>
+            <h2 className='text-center section-title'>My Skills</h2>
             <p className='text-readable skill-texts'>
                 I started learning web dev since July 2023. Since then I have explored various web technology. I started my journy, learning HTML (Hyper Text Markup Language) from w3school. Everything is changing day by day. Developer accepting new and new technology, frameworks in every moment. My learning journey at a glance:
             </p>
-            <article>
-                <h2>Web Technology</h2>
+            <article className='skills-container'>
+                <h3 className='article-header'>Web Technologies</h3>
                 {
                     techName.map((tech) => {
                         return(
