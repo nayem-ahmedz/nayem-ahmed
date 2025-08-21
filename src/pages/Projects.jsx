@@ -34,98 +34,96 @@ function Projects(){
     ];
 
     return(
-        <section>
-            <div className='wrapper'>
-                <h1 className='project-heading text-center'>List of all Projects</h1>
-                <p className='text-light text-readable'>
-                    Since I started learning web development, I tried to build projects, with as much knowledge as I gained. Thanks to some of my guides who taught me to create projects while learning. One says, 'Don't just keep learning and sit doing nothing; keep learning and try to build simple projects with whatever you have learned yet.' I followed them and I have created lots of projects. Here are a few of them:
-                </p>
-                <article className='css-projects'>
-                    <h2 className='project-types-heading'>1. HTML & CSS</h2>
-                    <select id='sort-projects-1' className='sort-option'>
-                        <option value='sort'>Sort</option>
-                        <option value='newer'>Newer</option>
-                        <option value='older'>Older</option>
-                    </select>
-                    <div className='project-outer'>
-                        {
-                            hcProjects.map((el) => {
-                                return(
-                                    <div className='project-inner' key={el.id}>
-                                        <a href={el.link} target='_blank' rel='noopener noreferrer'>
-                                            <img src={el.ss} alt={el.name + ' screenshot'} loading='lazy' />
-                                        </a>
-                                        <h3 className='project-name'> {el.name} </h3>
-                                    </div>
-                                )
-                            })
-                        }
-                    </div>
-                </article>
-                <article className='js-projects'>
-                    <h2 className='project-types-heading'>2. JavaScript Projects</h2>
-                    <select id='sort-projects-2' className='sort-option'>
-                        <option value='newer'>Newer</option>
-                        <option value='older'>Older</option>
-                    </select>
-                    <div className='project-outer'>
-                        {
-                            jsProjects.map((el) => {
-                                return(
-                                    <div className='project-inner' key={el.id}>
-                                        <a href={el.link} target='_blank' rel='noopener noreferrer'>
-                                            <img src={el.ss} alt={el.name + ' screenshot'} loading='lazy' />
-                                        </a>
-                                        <h3 className='project-name'> {el.name} </h3>
-                                    </div>
-                                )
-                            })
-                        }
-                    </div>
-                </article>
-                <article className='game-projects'>
-                    <h2 className='project-types-heading'>3. Game Projects</h2>
-                    <select id='sort-projects-3' className='sort-option'>
-                        <option value='newer'>Newer</option>
-                        <option value='older'>Older</option>
-                    </select>
-                    <div className='project-outer'>
-                        {
-                            gameProjects.map((el) => {
-                                return(
-                                    <div className='project-inner' key={el.id}>
-                                        <a href={el.link} target='_blank' rel='noopener noreferrer'>
-                                            <img src={el.ss} alt={el.name + ' screenshot'} loading='lazy' />
-                                        </a>
-                                        <h3 className='project-name'> {el.name} </h3>
-                                    </div>
-                                )
-                            })
-                        }
-                    </div>
-                </article>
-                <article className='university-projects'>
-                    <h2 className='project-types-heading'>4. University Projects</h2>
-                    <select id='sort-projects-4' className='sort-option'>
-                        <option value='newer'>Newer</option>
-                        <option value='older'>Older</option>
-                    </select>
-                    <div className='project-outer'>
-                        {
-                            univProjects.map((el) => {
-                                return(
-                                    <div className='project-inner' key={el.id}>
-                                        <a href={el.link} target='_blank' rel='noopener noreferrer'>
-                                            <img src={el.ss} alt={el.name + ' screenshot'} loading='lazy' />
-                                        </a>
-                                        <h3 className='project-name'> {el.name} { el.id === 2 && <i className='fa-brands fa-github github-link'></i> } </h3>
-                                    </div>
-                                )
-                            })
-                        }
-                    </div>
-                </article>
-            </div>
+        <section className='projects'>
+            <h1 className='section-title text-center'>List of all Projects</h1>
+            <p className='texts'>
+                Since I started learning web development, I tried to build projects, with as much knowledge as I gained. Thanks to some of my guides who taught me to create projects while learning. One says, 'Don't just keep learning and sit doing nothing; keep learning and try to build simple projects with whatever you have learned yet.' I followed them and I have created lots of projects. Here are a few of them:
+            </p>
+            <article className='css-projects'>
+                <h2 className='article-header'>1. HTML & CSS</h2>
+                <select id='sort-projects-1' className='sort-option'>
+                    <option value='sort'>Sort</option>
+                    <option value='newer'>Newer</option>
+                    <option value='older'>Older</option>
+                </select>
+                <div className='project-outer'>
+                    {
+                        hcProjects.map((el) => {
+                            return (
+                                <div className='project-inner' key={el.id}>
+                                    <a href={el.link} target='_blank' rel='noopener noreferrer'>
+                                        <img src={el.ss} alt={el.name + ' screenshot'} loading='lazy' />
+                                    </a>
+                                    <h3 className='project-name'> {el.name} </h3>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
+            </article>
+            <article className='js-projects'>
+                <h2 className='article-header'>2. JavaScript Projects</h2>
+                <select id='sort-projects-2' className='sort-option'>
+                    <option value='newer'>Newer</option>
+                    <option value='older'>Older</option>
+                </select>
+                <div className='project-outer'>
+                    {
+                        jsProjects.map((el) => {
+                            return (
+                                <div className='project-inner' key={el.id}>
+                                    <a href={el.link} target='_blank' rel='noopener noreferrer'>
+                                        <img src={el.ss} alt={el.name + ' screenshot'} loading='lazy' />
+                                    </a>
+                                    <h3 className='project-name'> {el.name} </h3>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
+            </article>
+            <article className='game-projects'>
+                <h2 className='article-header'>3. Game Projects</h2>
+                <select id='sort-projects-3' className='sort-option'>
+                    <option value='newer'>Newer</option>
+                    <option value='older'>Older</option>
+                </select>
+                <div className='project-outer'>
+                    {
+                        gameProjects.map((el) => {
+                            return (
+                                <div className='project-inner' key={el.id}>
+                                    <a href={el.link} target='_blank' rel='noopener noreferrer'>
+                                        <img src={el.ss} alt={el.name + ' screenshot'} loading='lazy' />
+                                    </a>
+                                    <h3 className='project-name'> {el.name} </h3>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
+            </article>
+            <article className='university-projects'>
+                <h2 className='article-header'>4. University Projects</h2>
+                <select id='sort-projects-4' className='sort-option'>
+                    <option value='newer'>Newer</option>
+                    <option value='older'>Older</option>
+                </select>
+                <div className='project-outer'>
+                    {
+                        univProjects.map((el) => {
+                            return (
+                                <div className='project-inner' key={el.id}>
+                                    <a href={el.link} target='_blank' rel='noopener noreferrer'>
+                                        <img src={el.ss} alt={el.name + ' screenshot'} loading='lazy' />
+                                    </a>
+                                    <h3 className='project-name'> {el.name} {el.id === 2 && <i className='fa-brands fa-github github-link'></i>} </h3>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
+            </article>
         </section>
     );
 }

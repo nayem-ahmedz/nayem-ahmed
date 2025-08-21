@@ -19,8 +19,14 @@ You can visit my Portffolio live here: [Nayem Ahmed's Portfolio](https://nayem-a
 
 ## Creation
 *Created on : 6 September 2024*
-*Coverted to React App on : 1 November 2024 (vite/23-Feb-2025)*
+*Coverted into React App on : 1 November 2024 (vite/23-Feb-2025)*
 *Last updated on : 16 August 2025*
+
+## Version History
+- **v2.0.0 (Aug 2025)** – Added dark mode and Redefine UI
+- **v1.7.0 (Feb 2025)** – Moved on Vite from CRA 
+- **v1.5.0 (Nov 2024)** – Converted into React App
+- **v1.0.0 (Sep 2024)** – Initial release
 
 ## Contact Me
 If you would like to get in touch, feel free to connect via:
