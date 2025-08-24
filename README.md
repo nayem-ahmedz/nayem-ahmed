@@ -20,7 +20,7 @@ You can visit my Portffolio live here: [Nayem Ahmed's Portfolio](https://nayem-a
 ## Creation
 *Created on : 6 September 2024*
 *Coverted into React App on : 1 November 2024 (vite/23-Feb-2025)*
-*Last updated on : 16 August 2025*
+*Last updated on : 24 August 2025*
 
 ## Version History
 - **v2.0.0 (Aug 2025)** – Added dark mode and Redefine UI

@@ -191,6 +191,13 @@ nav.top-nav{
 .theme-toggler:hover{
     transform: scale(1.5) rotate(180deg);
 }
+.mobile-theme{
+    display: none;
+    color: var(--link-primary);
+    font-size: 1.1rem;
+    margin-left: 10px;
+    font-weight: bold;
+}
 .theme-toggler i{
     font-size: 1.2rem;
     color: var(--text-primary);
@@ -459,12 +466,19 @@ footer{
         display: block;
         text-align: right;
     }
-    .top-nav ul li a:link, .top-nav ul li a:visited{
+    .top-nav ul li a:link, .top-nav ul li a:visited, .theme-toggler i{
         color: var(--link-primary-hover);
     }
     .top-nav ul li a:hover{
         color: var(--link-primary);
         background-color: var(--link-primary-hover);
+    }
+    .theme-toggler{
+        margin-top: 5px;
+    }
+    .mobile-theme{
+        display: inline-block;
+        color: var(--link-primary-hover);
     }
     .hamburger{
         display: block;

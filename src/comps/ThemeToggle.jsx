@@ -16,6 +16,11 @@ function ThemeToggle() {
     return (
         <button className='theme-toggler' onClick={changeTheme}>
             <i className="fa-solid fa-circle-half-stroke"></i>
+            <span className='mobile-theme'>
+                {
+                    theme === 'dark' ? 'Light Mode' : 'Dark Mode'
+                }
+            </span>
         </button>
     );
 }
