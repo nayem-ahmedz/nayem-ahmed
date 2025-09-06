@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-const profileCard = '/project-images/profile-card.webp'; 
 const parralaxWeb = '/project-images/parallax-website.webp';
 const tributeWeb = '/project-images/tribute-website.webp';
 const furnitureWeb = '/project-images/furniture-website.webp';
@@ -10,20 +9,25 @@ const simpleLudo = '/project-images/simple-ludo.webp';
 const bdmsWeb = '/project-images/blood-donation-management-system.webp';
 const spPortal = '/project-images/student-parent-portal.webp';
 const budgetTracker = '/project-images/budget-tracker.webp';
+const flowersMart = '/project-images/flowers-mart.webp';
+const emergencyHotline = '/project-images/emergency-hotline.webp';
+const englishJanala = '/project-images/english-janala.webp';
 
 function Projects(){
     useEffect(() => {document.title = 'Projects | Nayem Ahmed'}, []);
     const hcProjects = [
-        { id: 1, name: 'Profile Card', link: 'https://wev-dev.netlify.app/projects/web-projects/css/profile-card/', ss: profileCard },
-        { id: 2, name: 'Parallax Website', link: 'https://wev-dev.netlify.app/projects/web-projects/css/parallax-website/', ss: parralaxWeb },
-        { id: 3, name: 'Tribute Website', link: 'https://wev-dev.netlify.app/projects/web-projects/css/tribute-website/', ss: tributeWeb },
-        { id: 4, name: 'Furniture Website', link: 'https://wev-dev.netlify.app/projects/furniture-website/', ss: furnitureWeb },
-        { id: 5, name: 'Time Planner App', link: 'https://wev-dev.netlify.app/projects/time-planner-app/', ss: tpaWeb }
+        { id: 1, name: 'Parallax Website', link: 'https://nayem-ahmedz.github.io/parallax-website/', ss: parralaxWeb },
+        { id: 2, name: 'Tribute Website', link: 'https://wev-dev.netlify.app/projects/web-projects/css/tribute-website/', ss: tributeWeb },
+        { id: 3, name: 'Furniture Website', link: 'https://wev-dev.netlify.app/projects/furniture-website/', ss: furnitureWeb },
+        { id: 4, name: 'Time Planner App', link: 'https://wev-dev.netlify.app/projects/time-planner-app/', ss: tpaWeb },
+        { id: 5, name: 'Flowers Mart', link: 'https://nayem-ahmedz.github.io/flowers-mart/', ss: flowersMart }
     ];
     const jsProjects = [
         { id: 1, name: 'Age Calculator', link: 'https://wev-dev.netlify.app/projects/web-projects/js/life-timer-app/', ss: lifeTimer },
         { id: 2, name: 'Random Image Generator', link: 'https://wev-dev.netlify.app/projects/web-projects/js/random-image-generator/', ss: randomImg },
-        { id: 3, name: 'Budget Tracker', link: 'https://nz-budget-tracker.netlify.app/', ss: budgetTracker}
+        { id: 3, name: 'Budget Tracker', link: 'https://nz-budget-tracker.netlify.app/', ss: budgetTracker},
+        { id: 4, name: 'Emergency Hotline', link: 'https://nayem-ahmedz.github.io/emergency-hotline/', ss: emergencyHotline},
+        { id: 5, name: 'English Janala', link: 'https://nayem-ahmedz.github.io/english-janala/', ss: englishJanala}
     ];
     const gameProjects = [
         { id: 1, name: 'Simple Ludo', link: 'https://simple-ludo-game.netlify.app/', ss: simpleLudo }

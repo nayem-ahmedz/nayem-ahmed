@@ -1,8 +1,7 @@
 import { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import ReactGA from 'react-ga4';
-// import './App.css';
-import './new.css';
+import './App.css';
 import './assets/pages-style.css';
 import Header from './comps/Header';
 import Home from './comps/Home';
