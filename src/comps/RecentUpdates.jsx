@@ -5,6 +5,7 @@ function RecentUpdates(){
         <article className='recent-updates'>
             <h1 className='section-title'>Recent Updates about me</h1>
             <ul className='recent-ul'>
+                <li>Final Year 2nd Semester, working on Thesis related to Supershop and Multi-model Machine learning</li>
                 <li>Enrolled in Programming Hero's : Complete Web Development course</li>
                 <li>
                     Back to Study : Final Year, 1st term

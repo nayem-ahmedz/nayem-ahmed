@@ -1,42 +1,11 @@
-import { useEffect } from 'react';
-const parralaxWeb = '/project-images/parallax-website.webp';
-const tributeWeb = '/project-images/tribute-website.webp';
-const furnitureWeb = '/project-images/furniture-website.webp';
-const tpaWeb = '/project-images/time-planner-app.webp';
-const lifeTimer = '/project-images/life-timer-app.webp';
-const randomImg = '/project-images/random-image-generator.webp';
-const simpleLudo = '/project-images/simple-ludo.webp';
-const bdmsWeb = '/project-images/blood-donation-management-system.webp';
-const spPortal = '/project-images/student-parent-portal.webp';
-const budgetTracker = '/project-images/budget-tracker.webp';
-const flowersMart = '/project-images/flowers-mart.webp';
-const emergencyHotline = '/project-images/emergency-hotline.webp';
-const englishJanala = '/project-images/english-janala.webp';
+import { useState , useEffect } from 'react';
+import { hcProjects, jsProjects, gameProjects, univProjects } from '../assets/project-data';
+import ProjectModal from '../comps/ProjectModal';
 
 function Projects(){
     useEffect(() => {document.title = 'Projects | Nayem Ahmed'}, []);
-    const hcProjects = [
-        { id: 1, name: 'Parallax Website', link: 'https://nayem-ahmedz.github.io/parallax-website/', ss: parralaxWeb },
-        { id: 2, name: 'Tribute Website', link: 'https://wev-dev.netlify.app/projects/web-projects/css/tribute-website/', ss: tributeWeb },
-        { id: 3, name: 'Furniture Website', link: 'https://wev-dev.netlify.app/projects/furniture-website/', ss: furnitureWeb },
-        { id: 4, name: 'Time Planner App', link: 'https://wev-dev.netlify.app/projects/time-planner-app/', ss: tpaWeb },
-        { id: 5, name: 'Flowers Mart', link: 'https://nayem-ahmedz.github.io/flowers-mart/', ss: flowersMart }
-    ];
-    const jsProjects = [
-        { id: 1, name: 'Age Calculator', link: 'https://wev-dev.netlify.app/projects/web-projects/js/life-timer-app/', ss: lifeTimer },
-        { id: 2, name: 'Random Image Generator', link: 'https://wev-dev.netlify.app/projects/web-projects/js/random-image-generator/', ss: randomImg },
-        { id: 3, name: 'Budget Tracker', link: 'https://nz-budget-tracker.netlify.app/', ss: budgetTracker},
-        { id: 4, name: 'Emergency Hotline', link: 'https://nayem-ahmedz.github.io/emergency-hotline/', ss: emergencyHotline},
-        { id: 5, name: 'English Janala', link: 'https://nayem-ahmedz.github.io/english-janala/', ss: englishJanala}
-    ];
-    const gameProjects = [
-        { id: 1, name: 'Simple Ludo', link: 'https://simple-ludo-game.netlify.app/', ss: simpleLudo }
-    ];
-    const univProjects = [
-        { id: 1, name: 'Blood Donation MS', link: 'https://uni-project1.netlify.app/', ss: bdmsWeb },
-        { id: 2, name: 'Student-Parent Portal', link: 'https://github.com/nayem-ahmedz/student-parent-portal/', ss: spPortal}
-    ];
-
+    const [selectedProject, setSelectedProject] = useState(null);
+    const [loadImages, setLoadImages] = useState(false);
     return(
         <section className='projects'>
             <h1 className='section-title text-center'>List of all Projects</h1>
@@ -54,11 +23,12 @@ function Projects(){
                     {
                         hcProjects.map((el) => {
                             return (
-                                <div className='project-inner' key={el.id}>
-                                    <a href={el.link} target='_blank' rel='noopener noreferrer'>
-                                        <img src={el.ss} alt={el.name + ' screenshot'} loading='lazy' />
-                                    </a>
-                                    <h3 className='project-name'> {el.name} </h3>
+                                <div className={`project-inner ${loadImages || 'loading-image'}`} key={el.id} onClick={() => setSelectedProject(el)}>
+                                    <img src={el.ss} alt={el.name + ' screenshot'} loading='lazy' className='project-ss' onLoad={() => setLoadImages(true)} />
+                                    <div className='learn-more'>
+                                        <i className='fa-solid fa-circle-info'></i>
+                                        <h3 className='project-name'> {el.name} </h3>
+                                    </div>
                                 </div>
                             )
                         })
@@ -75,11 +45,12 @@ function Projects(){
                     {
                         jsProjects.map((el) => {
                             return (
-                                <div className='project-inner' key={el.id}>
-                                    <a href={el.link} target='_blank' rel='noopener noreferrer'>
-                                        <img src={el.ss} alt={el.name + ' screenshot'} loading='lazy' />
-                                    </a>
-                                    <h3 className='project-name'> {el.name} </h3>
+                                <div className={`project-inner ${loadImages || 'loading-image'}`} key={el.id} onClick={() => setSelectedProject(el)}>
+                                    <img src={el.ss} alt={el.name + ' screenshot'} loading='lazy' className='project-ss' onLoad={() => setLoadImages(true)} />
+                                    <div className='learn-more'>
+                                        <i className='fa-solid fa-circle-info'></i>
+                                        <h3 className='project-name'> {el.name} </h3>
+                                    </div>
                                 </div>
                             )
                         })
@@ -96,11 +67,12 @@ function Projects(){
                     {
                         gameProjects.map((el) => {
                             return (
-                                <div className='project-inner' key={el.id}>
-                                    <a href={el.link} target='_blank' rel='noopener noreferrer'>
-                                        <img src={el.ss} alt={el.name + ' screenshot'} loading='lazy' />
-                                    </a>
-                                    <h3 className='project-name'> {el.name} </h3>
+                                <div className={`project-inner ${loadImages || 'loading-image'}`} key={el.id} onClick={() => setSelectedProject(el)}>
+                                    <img src={el.ss} alt={el.name + ' screenshot'} loading='lazy' className='project-ss' onLoad={() => setLoadImages(true)} />
+                                    <div className='learn-more'>
+                                        <i className='fa-solid fa-circle-info'></i>
+                                        <h3 className='project-name'> {el.name} </h3>
+                                    </div>
                                 </div>
                             )
                         })
@@ -117,17 +89,23 @@ function Projects(){
                     {
                         univProjects.map((el) => {
                             return (
-                                <div className='project-inner' key={el.id}>
-                                    <a href={el.link} target='_blank' rel='noopener noreferrer'>
-                                        <img src={el.ss} alt={el.name + ' screenshot'} loading='lazy' />
-                                    </a>
-                                    <h3 className='project-name'> {el.name} {el.id === 2 && <i className='fa-brands fa-github github-link'></i>} </h3>
+                                <div className={`project-inner ${loadImages || 'loading-image'}`} key={el.id} onClick={() => setSelectedProject(el)}>
+                                    <img src={el.ss} alt={el.name + ' screenshot'} loading='lazy' className='project-ss' onLoad={() => setLoadImages(true)} />
+                                    <div className='learn-more'>
+                                        <i className='fa-solid fa-circle-info'></i>
+                                        <h3 className='project-name'> {el.name} </h3>
+                                    </div>
                                 </div>
                             )
                         })
                     }
                 </div>
             </article>
+            {
+                selectedProject && (
+                    <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} />
+                )
+            }
         </section>
     );
 }
