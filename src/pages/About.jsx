@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-const profileImg = '/media/nayem-ahmed.webp';
+const profileImg = '/media/nayem-ahmed2.webp';
 import Services from '../comps/Services';
 import Skills from '../comps/Skills';
 

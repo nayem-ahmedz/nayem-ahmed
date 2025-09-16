@@ -35,6 +35,8 @@
     --box-shadow: gray;
     /* gradient-colors */
     --gradient-1: rgba(0, 0, 0, 0.2);
+    --gradient-loadingImg1: gray;
+    --gradient-loadingImg2: #ccc;
 }
 /* colors: https://colorhunt.co/palette/eeeeee686d76373a40dc5f00 */
 .dark{
@@ -63,6 +65,8 @@
     --box-shadow: rgba(0,0,0,0.5);
     /* gradient-colors */
     --gradient-1: rgba(255, 255, 255, 0.2);
+    --gradient-loadingImg1: rgba(255, 255, 255, 0.1);
+    --gradient-loadingImg2: rgba(255, 255, 255, 0.3);
 }
 body{
     font-optical-sizing: auto;
@@ -452,6 +456,10 @@ footer{
 }
 
 @media screen and (max-width: 576px){
+    .btn-primary{
+        margin: 10px;
+        padding: 8px 16px;
+    }
     nav.top-nav ul{
         display: none;
         padding: 40px 12px 20px;

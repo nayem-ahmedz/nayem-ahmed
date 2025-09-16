@@ -197,7 +197,7 @@
 .projects-page article {
     margin-bottom: 45px;
 }
-.css-projects {
+.projects > article{
     margin-top: 40px;
 }
 .projects > .texts{
@@ -216,43 +216,98 @@
 }
 
 .project-outer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 }
 
 .project-inner {
-    flex-basis: calc(25% - (3rem/4));
     position: relative;
     overflow: hidden;
     border-radius: 5px;
-    min-height: 187px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-image: linear-gradient(45deg, var(--gradient-loadingImg1), var(--gradient-loadingImg2));
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    aspect-ratio: 16/9;
+}
+.loading-image{
+    animation: loadingImg 2s ease 0s 2 alternate;
+}
+@keyframes loadingImg {
+    0%{
+        background-image: linear-gradient(45deg, var(--gradient-loadingImg1), var(--gradient-loadingImg2));
+        opacity: 1;
+    }
+    25%{
+        background-image: linear-gradient(45deg, var(--gradient-loadingImg2), var(--gradient-loadingImg1));
+        opacity: 0.5;
+    }
+    50%{
+        background-image: linear-gradient(45deg, var(--gradient-loadingImg1), var(--gradient-loadingImg2));
+        opacity: 1;
+    }
+    75%{
+        background-image: linear-gradient(45deg, var(--gradient-loadingImg2), var(--gradient-loadingImg1));
+        opacity: 0.5;
+    }
+    100%{
+        background-image: linear-gradient(45deg, var(--gradient-loadingImg1), var(--gradient-loadingImg2));
+        opacity: 1;
+    }
 }
 
 .project-inner img {
+    /* display: none; */
     width: 100%;
+    height: 100%;
     transition: all 0.3s;
 }
-
-.project-name {
+.learn-more{
     position: absolute;
-    bottom: -80px;
-    background-color: #eee;
+    bottom: -200px;
     width: 100%;
+    transition: bottom 0.5s;
+}
+.learn-more > i{
+    color: white;
+    font-size: 3rem;
+    margin: 15px auto 30px;
+    text-align: center;
+    display: block;
+    text-shadow: 0 0 10px blue;
+    opacity: 0;
+}
+@keyframes blink {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.project-name {
+    background-color: #eee;
     padding: 12px 0;
     margin: 0;
     text-align: center;
-    transition: all 0.5s;
     box-shadow: 0 0 5px black;
 }
-
-.project-inner:hover .project-name {
+.project-inner:hover .project-ss{
+    opacity: 0.5;
+}
+.project-inner:hover .learn-more {
     bottom: 0;
 }
-
-.project-inner:hover img {
-    transform: scale(1.1);
+.project-inner:hover .learn-more > i{
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-delay: 0.2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 4;
+    animation-direction: alternate;
 }
 
 .github-link {
@@ -316,28 +371,20 @@
 }
 
 /* Media screen */
-@media screen and (max-width: 1300px) {
-    .project-inner {
-        flex-basis: calc(33.3% - (2rem/3));
-    }
-}
-
 @media screen and (max-width: 1023px) {
-    .project-inner {
-        min-height: 135px;
+    .projects > article{
+        margin-top: 20px;
+    }
+    .project-outer{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .learn-more > i{
+        margin: 0 auto 25px;
     }
 }
 
 @media screen and (max-width: 767px) {
-    .project-outer {
-        gap: 0.8rem;
-    }
-
-    .project-inner {
-        flex-basis: calc(50% - (0.8rem/2));
-        min-height: 110px;
-    }
-
     .project-name {
         padding: 4px 0;
         font-size: 1rem;
@@ -348,21 +395,20 @@
     .contact-form-field {
         padding: 40px 20px;
     }
-
     .contact-form>input,
     .contact-form>textarea,
     .captcha-div {
         width: 95%;
     }
-
     #success-message {
         width: 90%;
     }
-
-    .project-name {
-        bottom: 0;
-        background-color: #ccc;
-        font-weight: 500;
+    .project-outer{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    .learn-more{
+        display: none;
     }
 }
 
@@ -371,7 +417,6 @@
         transform: scale(0.8);
         margin: 0;
     }
-
     .project-name {
         font-size: 0.8rem;
     }
