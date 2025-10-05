@@ -142,11 +142,12 @@
 
 /* Message Section */
 .message-section {
-    min-height: 600px;
+    text-align: center;
+    margin: 30px auto;
+    min-height: calc(100vh - 280px);
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
 .message-text {
@@ -315,22 +316,21 @@
 }
 
 /* 404 Error Page */
-.error-404>button {
-    opacity: 0.6;
+.error-report{
+    opacity: 0.5;
 }
-
 .error-404 h2 {
     color: red;
     text-align: left;
+    margin-bottom: 10px;
     font-weight: 600 !important;
 }
 
-.error-404 h3 {
+.error-404 p{
     text-align: left;
-    color: rgba(0, 0, 0, 0.7) !important;
-    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.5);
     margin-bottom: 2rem;
-    line-height: 1.25;
+    line-height: 1.35;
 }
 
 /* version page */
@@ -370,17 +370,47 @@
     margin: 5px auto;
 }
 
-/* Media screen */
-@media screen and (max-width: 1023px) {
-    .projects > article{
+/* blog */
+.blog-lists{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    min-height: 60vh;
+    color: var(--text-primary);
+}
+.blog-lists > div{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.blog-lists > div img{
+    width: 100%;
+}
+.blog-lists > div:first-child{
+    grid-column: span 3;
+    display: flex;
+    gap: 16px;
+}
+.blog-lists > div:first-child > div{
+    width: 50%;
+}
+
+/* Responsive Media Query */
+@media screen and (max-width: 1024px) {
+    .projects>article {
         margin-top: 20px;
     }
-    .project-outer{
+    .project-outer {
         grid-template-columns: repeat(3, 1fr);
         gap: 16px;
     }
-    .learn-more > i{
+    .learn-more>i {
         margin: 0 auto 25px;
+    }
+    .blog-lists {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .blog-lists > div:first-child {
+        grid-column: span 2;
     }
 }
 
@@ -391,7 +421,7 @@
     }
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 600px) {
     .contact-form-field {
         padding: 40px 20px;
     }
@@ -409,6 +439,16 @@
     }
     .learn-more{
         display: none;
+    }
+    .message-section{
+        min-height: calc(100vh - 300px);
+    }
+    .blog-lists {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .blog-lists > div:first-child {
+        grid-column: span 1;
     }
 }
 
